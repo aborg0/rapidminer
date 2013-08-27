@@ -452,8 +452,10 @@ public class ToolTipWindow {
             @Override
             public void actionPerformed(ActionEvent e) {
                 currentDialog.dispose();
+                parent.requestFocusInWindow();
             }
         });
+        currentDialog.setAlwaysOnTop(true);
         currentDialog.setVisible(true);
     }
 
