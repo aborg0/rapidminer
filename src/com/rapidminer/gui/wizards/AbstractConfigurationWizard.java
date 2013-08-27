@@ -108,7 +108,7 @@ public abstract class AbstractConfigurationWizard extends JDialog {
         
     /** Creates a new wizard. */
     public AbstractConfigurationWizard(String name, ConfigurationListener listener) {
-        super(RapidMinerGUI.getMainFrame(), name, true);
+        super(RapidMinerGUI.getMainFrame().getWindow(), name, true);
 
         this.listener = listener;
         

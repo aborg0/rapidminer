@@ -59,7 +59,7 @@ public class ColorValueCellEditor extends AbstractCellEditor implements Property
         button.setIconTextGap(6);
         button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Color newColor = JColorChooser.showDialog(RapidMinerGUI.getMainFrame(),
+				Color newColor = JColorChooser.showDialog(RapidMinerGUI.getMainFrame().getWindow(),
 	                                                      "Choose Color for " + type.getKey(),
 	                                                      ((ColorIcon)button.getIcon()).getColor());
                 if (newColor != null)

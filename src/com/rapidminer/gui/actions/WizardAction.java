@@ -24,7 +24,7 @@ package com.rapidminer.gui.actions;
 
 import java.awt.event.ActionEvent;
 
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.dialog.TemplateWizardDialog;
 import com.rapidminer.gui.tools.ResourceAction;
 
@@ -38,9 +38,9 @@ public class WizardAction extends ResourceAction {
 
 	private static final long serialVersionUID = -7497168731539521695L;
 
-	private MainFrame mainFrame;
+	private MainUIState mainFrame;
 	
-	public WizardAction(MainFrame mainFrame) {
+	public WizardAction(MainUIState mainFrame) {
 		super("wizard");
 		this.mainFrame = mainFrame;
 	}

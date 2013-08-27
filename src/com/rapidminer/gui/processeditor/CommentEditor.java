@@ -32,7 +32,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 import com.rapidminer.Process;
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.AbstractUIState;
 import com.rapidminer.gui.tools.ExtendedJScrollPane;
 import com.rapidminer.gui.tools.ResourceDockKey;
 import com.rapidminer.gui.tools.SwingTools;
@@ -145,7 +145,7 @@ public class CommentEditor extends JPanel implements ProcessEditor, Dockable {
 	public static final String COMMENT_EDITOR_DOCK_KEY = "comment_editor";
 	private final DockKey DOCK_KEY = new ResourceDockKey(COMMENT_EDITOR_DOCK_KEY);
 	{
-		DOCK_KEY.setDockGroup(MainFrame.DOCK_GROUP_ROOT);
+		DOCK_KEY.setDockGroup(AbstractUIState.DOCK_GROUP_ROOT);
 	}
 	@Override
 	public Component getComponent() {

@@ -43,7 +43,7 @@ import com.vlsolutions.swing.docking.event.DockableStateChangeListener;
 public class NotOnScreenStep extends Step {
 	
 	private boolean showMe = false;
-	private Window owner = RapidMinerGUI.getMainFrame();
+	private Window owner = RapidMinerGUI.getMainFrame().getWindow();
 	private String dockableKey;
 	private String i18nKey = "lostDockable";
 	private DockableStateChangeListener dockListener;

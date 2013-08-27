@@ -34,6 +34,7 @@ import javax.swing.JPopupMenu;
 import javax.swing.JScrollPane;
 import javax.swing.JToolBar;
 
+import com.rapidminer.gui.AbstractUIState;
 import com.rapidminer.gui.MainFrame;
 import com.rapidminer.gui.RapidMinerGUI;
 import com.rapidminer.gui.actions.OpenAction;
@@ -106,11 +107,11 @@ public class RepositoryBrowser extends JPanel implements Dockable {
 			@Override
 			protected JPopupMenu getPopupMenu() {
 				JPopupMenu menu = new JPopupMenu();
-				menu.add(RapidMinerGUI.getMainFrame().IMPORT_CSV_FILE_ACTION);
-				menu.add(RapidMinerGUI.getMainFrame().IMPORT_EXCEL_FILE_ACTION);
-				menu.add(RapidMinerGUI.getMainFrame().IMPORT_XML_FILE_ACTION);
-				menu.add(RapidMinerGUI.getMainFrame().IMPORT_ACCESS_FILE_ACTION);
-				menu.add(RapidMinerGUI.getMainFrame().IMPORT_DATABASE_TABLE_ACTION);
+				menu.add(RapidMinerGUI.getMainFrame().getImportCsvFileAction());
+				menu.add(RapidMinerGUI.getMainFrame().getImportExcelFileAction());
+				menu.add(RapidMinerGUI.getMainFrame().getImportXmlFileAction());
+				menu.add(RapidMinerGUI.getMainFrame().getImportAccessFileAction());
+				menu.add(RapidMinerGUI.getMainFrame().getImportDatabaseTableAction());
 				menu.add(BlobImportWizard.IMPORT_BLOB_ACTION);
 				return menu;
 			}
@@ -133,7 +134,7 @@ public class RepositoryBrowser extends JPanel implements Dockable {
 	public static final String REPOSITORY_BROWSER_DOCK_KEY = "repository_browser";
 	private final DockKey DOCK_KEY = new ResourceDockKey(REPOSITORY_BROWSER_DOCK_KEY);
 	{
-		DOCK_KEY.setDockGroup(MainFrame.DOCK_GROUP_ROOT);
+		DOCK_KEY.setDockGroup(AbstractUIState.DOCK_GROUP_ROOT);
 	}
 	@Override
 	public Component getComponent() {

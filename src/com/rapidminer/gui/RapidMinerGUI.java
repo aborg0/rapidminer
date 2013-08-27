@@ -26,6 +26,7 @@ package com.rapidminer.gui;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.Window;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -196,7 +197,7 @@ public class RapidMinerGUI extends RapidMiner {
 
 	private static final int NUMBER_OF_RECENT_FILES = 8;
 
-	private static MainFrame mainFrame;
+	private static MainUIState mainFrame;
 
 	private static LinkedList<ProcessLocation> recentFiles = new LinkedList<ProcessLocation>();
 
@@ -222,7 +223,6 @@ public class RapidMinerGUI extends RapidMiner {
 	//private static UpdateManager updateManager = new CommunityUpdateManager();
 
 	public void run(final String openLocation) throws Exception {
-
 		// check if resources were copied
 		URL logoURL = Tools.getResource("rapidminer_logo.png");
 		if (logoURL == null) {
@@ -254,7 +254,6 @@ public class RapidMinerGUI extends RapidMiner {
 		RepositoryManager.getInstance(null).createRepositoryIfNoneIsDefined();
 
 		RapidMiner.splashMessage("create_frame");
-
 		SwingUtilities.invokeAndWait(new Runnable() {
 
 			@Override
@@ -264,14 +263,18 @@ public class RapidMinerGUI extends RapidMiner {
 		});
 
 		RapidMiner.splashMessage("gui_properties");
-		loadGUIProperties(mainFrame);
+		if (mainFrame instanceof MainFrame) {//TODO
+			loadGUIProperties((MainFrame)mainFrame);
+		}
 
 		RapidMiner.splashMessage("plugin_gui");
 		Plugin.initPluginGuis(mainFrame);
 
 		RapidMiner.splashMessage("show_frame");
 
-		mainFrame.setVisible(true);
+		if (mainFrame instanceof Window) {
+			((Window)mainFrame).setVisible(true);
+		}
 
 		UsageStatsTransmissionDialog.init();
 
@@ -326,17 +329,17 @@ public class RapidMinerGUI extends RapidMiner {
 		} catch (Exception e) {
 			//LogService.getRoot().log(Level.WARNING, "Cannot setup modern look and feel, using default.", e);
 			LogService.getRoot().log(Level.WARNING,
-					I18N.getMessage(LogService.getRoot().getResourceBundle(),
+					I18N.getMessage(LogService.getRoot().getResourceBundle(), 
 							"com.rapidminer.gui.RapidMinerGUI.setting_up_modern_look_and_feel_error"),
 					e);
 		}
 	}
 
-	public static void setMainFrame(MainFrame mf) {
+	public static <State extends MainUIState & ProcessEndHandler> void setMainFrame(State mf) {
 		mainFrame = mf;
 	}
 
-	public static MainFrame getMainFrame() {
+	public static MainUIState getMainFrame() {
 		return mainFrame;
 	}
 
@@ -389,7 +392,7 @@ public class RapidMinerGUI extends RapidMiner {
 		} catch (IOException e) {
 			//LogService.getRoot().log(Level.WARNING, "Cannot read history file", e);
 			LogService.getRoot().log(Level.WARNING,
-					I18N.getMessage(LogService.getRoot().getResourceBundle(),
+					I18N.getMessage(LogService.getRoot().getResourceBundle(), 
 							"com.rapidminer.gui.RapidMinerGUI.reading_history_file_error"),
 					e);
 		} finally {
@@ -399,7 +402,7 @@ public class RapidMinerGUI extends RapidMiner {
 				} catch (IOException e) {
 					//LogService.getRoot().log(Level.WARNING, "Cannot read history file", e);
 					LogService.getRoot().log(Level.WARNING,
-							I18N.getMessage(LogService.getRoot().getResourceBundle(),
+							I18N.getMessage(LogService.getRoot().getResourceBundle(), 
 									"com.rapidminer.gui.RapidMinerGUI.reading_history_file_error"),
 							e);
 				}
@@ -426,13 +429,14 @@ public class RapidMinerGUI extends RapidMiner {
 
 	private static void saveGUIProperties() {
 		Properties properties = new Properties();
-		MainFrame mainFrame = getMainFrame();
-		if (mainFrame != null) {
-			properties.setProperty(PROPERTY_GEOMETRY_X, "" + (int) mainFrame.getLocation().getX());
-			properties.setProperty(PROPERTY_GEOMETRY_Y, "" + (int) mainFrame.getLocation().getY());
-			properties.setProperty(PROPERTY_GEOMETRY_WIDTH, "" + mainFrame.getWidth());
-			properties.setProperty(PROPERTY_GEOMETRY_HEIGHT, "" + mainFrame.getHeight());
-			properties.setProperty(PROPERTY_GEOMETRY_EXTENDED_STATE, "" + mainFrame.getExtendedState());
+		MainUIState mainFrame = getMainFrame();
+		if (mainFrame != null && mainFrame instanceof java.awt.Frame) {
+			java.awt.Frame frame = (java.awt.Frame) mainFrame;
+			properties.setProperty(PROPERTY_GEOMETRY_X, "" + (int) frame.getLocation().getX());
+			properties.setProperty(PROPERTY_GEOMETRY_Y, "" + (int) frame.getLocation().getY());
+			properties.setProperty(PROPERTY_GEOMETRY_WIDTH, "" + frame.getWidth());
+			properties.setProperty(PROPERTY_GEOMETRY_HEIGHT, "" + frame.getHeight());
+			properties.setProperty(PROPERTY_GEOMETRY_EXTENDED_STATE, "" + frame.getExtendedState());
 			//properties.setProperty(PROPERTY_GEOMETRY_DIVIDER_MAIN, "" + mainFrame.getMainDividerLocation());
 			//properties.setProperty(PROPERTY_GEOMETRY_DIVIDER_EDITOR, "" + mainFrame.getEditorDividerLocation());
 			//properties.setProperty(PROPERTY_GEOMETRY_DIVIDER_LOGGING, "" + mainFrame.getLoggingDividerLocation());
@@ -446,22 +450,22 @@ public class RapidMinerGUI extends RapidMiner {
 			} catch (IOException e) {
 				//LogService.getRoot().log(Level.WARNING, "Cannot write GUI properties: " + e.getMessage(), e);
 				LogService.getRoot().log(Level.WARNING,
-						I18N.getMessage(LogService.getRoot().getResourceBundle(),
-								"com.rapidminer.gui.RapidMinerGUI.writing_gui_properties_error",
+						I18N.getMessage(LogService.getRoot().getResourceBundle(), 
+								"com.rapidminer.gui.RapidMinerGUI.writing_gui_properties_error", 
 								e.getMessage()),
 						e);
 			} finally {
 				try {
 					if (out != null)
 						out.close();
-				} catch (IOException e) {}
+				} catch (IOException e) { }
 			}
 			mainFrame.getResultDisplay().clearAll();
 			mainFrame.getPerspectives().saveAll();
 		}
 	}
 
-	private static void loadGUIProperties(MainFrame mainFrame) {
+	private static <Frame extends JFrame & MainUIState> void loadGUIProperties(Frame mainFrame) {
 		Properties properties = new Properties();
 		File file = FileSystemService.getUserConfigFile("gui.properties");
 		if (file.exists()) {
@@ -504,9 +508,12 @@ public class RapidMinerGUI extends RapidMiner {
 	 */
 	private static void setDefaultGUIProperties() {
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		mainFrame.setLocation((int) (0.05d * screenSize.getWidth()), (int) (0.05d * screenSize.getHeight()));
-		mainFrame.setSize((int) (0.9d * screenSize.getWidth()), (int) (0.9d * screenSize.getHeight()));
-		//mainFrame.setDividerLocations((int)(0.6d * screenSize.getHeight()), (int)(0.2d * screenSize.getWidth()), (int)(0.75d * screenSize.getWidth()), (int)(0.4d * screenSize.getWidth()));
+		if (mainFrame instanceof Window) {
+			Window window = (Window) mainFrame;
+			window.setLocation((int)(0.05d * screenSize.getWidth()), (int) (0.05d * screenSize.getHeight()));
+			window.setSize((int)(0.9d * screenSize.getWidth()), (int) (0.9d * screenSize.getHeight()));
+			//window.setDividerLocations((int)(0.6d * screenSize.getHeight()), (int)(0.2d * screenSize.getWidth()), (int)(0.75d * screenSize.getWidth()), (int)(0.4d * screenSize.getWidth()));
+		}
 		mainFrame.setExpertMode(false);
 	}
 
@@ -514,17 +521,16 @@ public class RapidMinerGUI extends RapidMiner {
 		System.setSecurityManager(null);
 		RapidMiner.addShutdownHook(new ShutdownHook());
 		setExecutionMode(System.getProperty(PROPERTY_HOME_REPOSITORY_URL) == null ?
-				ExecutionMode.UI : ExecutionMode.WEBSTART);
+						ExecutionMode.UI : ExecutionMode.WEBSTART);
 
 		boolean shouldLaunch = true;
 		if (args.length > 0) {
 			if (!LaunchListener.defaultLaunchWithArguments(args, new RemoteControlHandler() {
-
 				@Override
 				public boolean handleArguments(String[] args) {
 					//LogService.getRoot().info("Received message from second launching client: "+Arrays.toString(args));
 					LogService.getRoot().log(Level.INFO, "com.rapidminer.gui.RapidMinerGUI.received_message", Arrays.toString(args));
-					mainFrame.requestFocus();
+					((MainFrame)mainFrame).requestFocus();
 					if (args.length >= 1) {
 						OpenAction.open(args[0], false);
 					}

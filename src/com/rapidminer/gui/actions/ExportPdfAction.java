@@ -152,7 +152,7 @@ public class ExportPdfAction extends ResourceAction {
 	 */
 	private File promptForPdfLocation() {
 		// prompt user for pdf location
-		File file = SwingTools.chooseFile(RapidMinerGUI.getMainFrame(), "export_pdf", null, false, false, new String[] { "pdf" }, new String[] { "PDF" }, false);
+		File file = SwingTools.chooseFile(RapidMinerGUI.getMainFrame().getWindow(), "export_pdf", null, false, false, new String[] { "pdf" }, new String[] { "PDF" }, false);
 		if (file == null) {
 			return null;
 		}

@@ -49,7 +49,7 @@ public class ResumeFromBreakpointStep extends Step {
 
 	private String i18nKey;
 	private AlignedSide alignment;
-	private Window owner = RapidMinerGUI.getMainFrame();
+	private Window owner = RapidMinerGUI.getMainFrame().getWindow();
 	private AddBreakpointStep.Position position;
 	Class<? extends Operator> operatorClass;
 	private String attachToKey = "run";

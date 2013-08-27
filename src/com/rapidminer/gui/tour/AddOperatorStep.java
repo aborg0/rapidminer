@@ -49,7 +49,7 @@ public class AddOperatorStep extends Step {
 
 	private String i18nKey;
 	private AlignedSide alignment;
-	private Window owner = RapidMinerGUI.getMainFrame();
+	private Window owner = RapidMinerGUI.getMainFrame().getWindow();
 	private Class operatorClass;
 	private String targetDockKey;
 	private boolean checkForChain = true;

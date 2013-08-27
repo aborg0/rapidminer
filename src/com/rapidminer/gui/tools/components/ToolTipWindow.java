@@ -61,8 +61,8 @@ import javax.swing.event.HyperlinkListener;
 import javax.swing.text.html.HTMLEditorKit;
 import javax.swing.text.html.StyleSheet;
 
-import com.rapidminer.gui.ApplicationFrame;
 import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.RapidMinerGUI;
 import com.rapidminer.gui.tools.ExtendedHTMLJEditorPane;
 import com.rapidminer.gui.tools.ProgressThread;
 import com.rapidminer.gui.tools.ResourceLabel;
@@ -149,7 +149,7 @@ public class ToolTipWindow {
             showTip();
         }
     });
-    
+
     /** We use this approach for tracking the mouse exited event from the dialog.
      * http://weblogs.java.net/blog/alexfromsun/archive/2006/09/a_wellbehaved_g.html
      * The method described in the Java Tutorial on using glasspanes described here:
@@ -347,7 +347,7 @@ public class ToolTipWindow {
                 parentIsActive(e);
             }
         });
-    }
+            }
 
     private void parentIsActive(MouseEvent e) {
         lastMousePosition = e.getPoint();
@@ -377,7 +377,7 @@ public class ToolTipWindow {
     }
 
     private void makeDialog(boolean undecorated, Point point) {
-        currentDialog = new JDialog(owner != null ? owner : ApplicationFrame.getApplicationFrame());
+        currentDialog = new JDialog(owner != null ? owner : RapidMinerGUI.getMainFrame().getWindow());
         if (undecorated) {
             //currentDialog.setModal(true);
             currentDialog.setUndecorated(true);

@@ -53,7 +53,7 @@ public class BlobImportWizard extends AbstractWizard {
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			new BlobImportWizard(RapidMinerGUI.getMainFrame()).setVisible(true);
+			new BlobImportWizard(RapidMinerGUI.getMainFrame().getWindow()).setVisible(true);
 		}
 	};
 	
@@ -62,7 +62,7 @@ public class BlobImportWizard extends AbstractWizard {
 	private File file;
 	
 	public BlobImportWizard(Frame owner) {
-		super(RapidMinerGUI.getMainFrame(), "import_blob");
+		super(RapidMinerGUI.getMainFrame().getWindow(), "import_blob");
 		
 		addStep(new FileSelectionWizardStep(this) {
 			@Override

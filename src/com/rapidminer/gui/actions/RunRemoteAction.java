@@ -24,7 +24,7 @@ package com.rapidminer.gui.actions;
 
 import java.awt.event.ActionEvent;
 
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.ProcessState;
 import com.rapidminer.gui.RapidMinerGUI;
 import com.rapidminer.gui.tools.ResourceAction;
 import com.rapidminer.repository.gui.RunRemoteDialog;
@@ -36,7 +36,7 @@ public class RunRemoteAction extends ResourceAction {
 
 	private static final long serialVersionUID = 1L;
 
-	public MainFrame mainFrame;
+	public ProcessState mainFrame;
 	
 	public RunRemoteAction() {
 		super(true, "run_remote");

@@ -46,7 +46,7 @@ import com.rapidminer.operator.Operator;
 public class RenameOperatorStep extends Step {
 
 	private AlignedSide alignment;
-	private Window owner = RapidMinerGUI.getMainFrame();
+	private Window owner = RapidMinerGUI.getMainFrame().getWindow();
 	private BubbleTo element;
 	private String i18nKey;
 	private String targetName;

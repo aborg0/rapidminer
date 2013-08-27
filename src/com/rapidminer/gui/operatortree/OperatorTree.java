@@ -42,7 +42,7 @@ import javax.swing.tree.TreeSelectionModel;
 
 import com.rapidminer.BreakpointListener;
 import com.rapidminer.Process;
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.dnd.OperatorTreeTransferHandler;
 import com.rapidminer.gui.flow.ProcessRenderer;
 import com.rapidminer.gui.operatortree.actions.CollapseAllAction;
@@ -92,7 +92,7 @@ public class OperatorTree extends JTree implements TreeSelectionListener, TreeEx
     public transient final LockTreeStructureAction TOGGLE_STRUCTURE_LOCK_ACTION = new LockTreeStructureAction(this, IconSize.SMALL);
 
     /** The main frame. Used for conditional action updates and property table settings. */
-    private final MainFrame mainFrame;
+    private final MainUIState mainFrame;
 
     /** The tree model of the operator tree. */
     private transient ProcessTreeModel treeModel;
@@ -106,7 +106,7 @@ public class OperatorTree extends JTree implements TreeSelectionListener, TreeEx
     // ======================================================================
 
     /** Creates a new operator tree. */
-    public OperatorTree(MainFrame mainFrame) {
+    public OperatorTree(MainUIState mainFrame) {
         super();
         this.mainFrame = mainFrame;
 

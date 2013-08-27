@@ -33,7 +33,7 @@ import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.TreePath;
 
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.AbstractUIState;
 import com.rapidminer.gui.dnd.DragListener;
 import com.rapidminer.gui.tools.ResourceDockKey;
 import com.rapidminer.operator.OperatorDescription;
@@ -110,7 +110,7 @@ public class NewOperatorEditor extends JPanel implements TreeSelectionListener, 
 		return DOCK_KEY;
 	}
 	{
-		DOCK_KEY.setDockGroup(MainFrame.DOCK_GROUP_ROOT);
+		DOCK_KEY.setDockGroup(AbstractUIState.DOCK_GROUP_ROOT);
 	}
 	public boolean shouldAutoConnectNewOperatorsInputs() {
     	return newOperatorGroupTree.shouldAutoConnectNewOperatorsInputs();

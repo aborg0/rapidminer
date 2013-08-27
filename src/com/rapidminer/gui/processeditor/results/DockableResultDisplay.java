@@ -44,7 +44,9 @@ import com.rapidminer.LoggingListener;
 import com.rapidminer.Process;
 import com.rapidminer.ProcessListener;
 import com.rapidminer.datatable.DataTable;
+import com.rapidminer.gui.AbstractUIState;
 import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.RapidMinerGUI;
 import com.rapidminer.gui.actions.CloseAllResultsAction;
 import com.rapidminer.gui.processeditor.ProcessLogTab;
@@ -98,7 +100,7 @@ public class DockableResultDisplay extends JPanel implements ResultDisplay {
 	private Boolean closeResultsPerRun;
 	
 	public DockableResultDisplay() {
-		this.dockKey.setDockGroup(MainFrame.DOCK_GROUP_RESULTS);
+		this.dockKey.setDockGroup(AbstractUIState.DOCK_GROUP_RESULTS);
 		DockableActionCustomizer customizer = new DockableActionCustomizer(){
 
 			@Override
@@ -117,7 +119,7 @@ public class DockableResultDisplay extends JPanel implements ResultDisplay {
 		tableUpdateQueue.start();
 	}
 	
-	public void init(MainFrame mf) {
+	public void init(MainUIState mf) {
 		DockingDesktop desktop = mf.getDockingDesktop();
 		desktop.addDockingActionListener(new DockingActionListener() {			
 			@Override public void dockingActionPerformed(DockingActionEvent arg0) { }			

@@ -31,7 +31,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JToggleButton;
 
 import com.rapidminer.Process;
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.AbstractUIState;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.processeditor.ProcessEditor;
 import com.rapidminer.gui.tools.ExtendedJScrollPane;
 import com.rapidminer.gui.tools.PrintingTools;
@@ -51,13 +52,13 @@ public class OperatorTreePanel extends JPanel implements Dockable, ProcessEditor
 
 	private final OperatorTree operatorTree;
 
-	public OperatorTreePanel(final MainFrame mainFrame) {
+	public OperatorTreePanel(final MainUIState mainFrame) {
 		operatorTree = new OperatorTree(mainFrame);
 		
 		ViewToolBar toolBar = new ViewToolBar();
 		toolBar.add(mainFrame.getActions().NEW_OPERATOR_ACTION);
 		toolBar.add(mainFrame.getActions().NEW_BUILDING_BLOCK_ACTION);
-		toolBar.add(mainFrame.REWIRE_RECURSIVELY);
+		toolBar.add(mainFrame.getRewireRecursively());
 		JToggleButton toggleAllBreakpointsButton = mainFrame.getActions().TOGGLE_ALL_BREAKPOINTS.createToggleButton();
 		toggleAllBreakpointsButton.setText(null);
 		toolBar.add(toggleAllBreakpointsButton);				
@@ -77,7 +78,7 @@ public class OperatorTreePanel extends JPanel implements Dockable, ProcessEditor
 	
 	private final DockKey DOCK_KEY = new ResourceDockKey("operator_tree");
 	{
-		DOCK_KEY.setDockGroup(MainFrame.DOCK_GROUP_ROOT);
+		DOCK_KEY.setDockGroup(AbstractUIState.DOCK_GROUP_ROOT);
 	}
 	
 	private Component component;

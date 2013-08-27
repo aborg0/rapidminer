@@ -30,7 +30,7 @@ import javax.swing.ImageIcon;
 import com.rapid_i.repository.wsimport.ExecutionResponse;
 import com.rapid_i.repository.wsimport.ProcessContextWrapper;
 import com.rapidminer.RepositoryProcessLocation;
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.RapidMinerGUI;
 import com.rapidminer.gui.tools.ProgressThread;
 import com.rapidminer.gui.tools.SwingTools;
@@ -54,11 +54,11 @@ public class RunRemoteNowAction extends AbstractAction {
 
 	private static final long serialVersionUID = 1;
 	
-    private final MainFrame mainFrame;
+    private final MainUIState mainFrame;
     
-    public RunRemoteNowAction(MainFrame mainFrame) {
+    public RunRemoteNowAction(MainUIState abstractUIState) {
         super(I18N.getMessage(I18N.getGUIBundle(), "gui.action.run_remote_now.label"));
-        this.mainFrame = mainFrame;
+        this.mainFrame = abstractUIState;
         
         String tip = I18N.getMessageOrNull(I18N.getGUIBundle(), "gui.action.run_remote_now.tip");
 		if (tip != null) {

@@ -27,7 +27,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.Icon;
 
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.tools.SwingTools;
 import com.rapidminer.tools.I18N;
 
@@ -46,9 +46,9 @@ public class WelcomeNewAction extends AbstractAction {
 		icon = SwingTools.createIcon("48/" + I18N.getMessage(I18N.getGUIBundle(), "gui.action.welcome.new.icon"));
 	}
 		
-	private MainFrame mainFrame;
+	private MainUIState mainFrame;
 	
-	public WelcomeNewAction(MainFrame mainFrame) {
+	public WelcomeNewAction(MainUIState mainFrame) {
 		super(I18N.getMessage(I18N.getGUIBundle(), "gui.action.welcome.new.label"), icon);
 		putValue(SHORT_DESCRIPTION, I18N.getMessage(I18N.getGUIBundle(), "gui.action.welcome.new.tip"));
 		this.mainFrame = mainFrame;

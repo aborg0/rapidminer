@@ -42,7 +42,8 @@ import org.fife.ui.rtextarea.RTextAreaEditorKit;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 import com.rapidminer.Process;
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.AbstractUIState;
+import com.rapidminer.gui.ProcessState;
 import com.rapidminer.gui.RapidMinerGUI;
 import com.rapidminer.gui.tools.ExtendedJToolBar;
 import com.rapidminer.gui.tools.ResourceAction;
@@ -71,9 +72,9 @@ public class XMLEditor extends JPanel implements ProcessEditor, Dockable, FocusL
 		
 	private final RSyntaxTextArea editor;
 	
-	private final MainFrame mainFrame;
+	private final ProcessState mainFrame;
 	
-	public XMLEditor(MainFrame mainFrame) {
+	public XMLEditor(ProcessState mainFrame) {
 		super(new BorderLayout());
 		this.mainFrame = mainFrame;
 		
@@ -163,7 +164,7 @@ public class XMLEditor extends JPanel implements ProcessEditor, Dockable, FocusL
 	public static final String XML_EDITOR_DOCK_KEY = "xml_editor";
 	private final DockKey DOCK_KEY = new ResourceDockKey(XML_EDITOR_DOCK_KEY);
 	{
-		DOCK_KEY.setDockGroup(MainFrame.DOCK_GROUP_ROOT);
+		DOCK_KEY.setDockGroup(AbstractUIState.DOCK_GROUP_ROOT);
 	}
 	@Override
 	public Component getComponent() {

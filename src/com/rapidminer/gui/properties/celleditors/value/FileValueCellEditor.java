@@ -126,7 +126,7 @@ public abstract class FileValueCellEditor extends AbstractCellEditor implements 
 	private void buttonPressed() {
 		String value = (String) getCellEditorValue();
 		File file = (value == null || value.length() == 0) ? null : RapidMinerGUI.getMainFrame().getProcess().resolveFileName(value);
-		File selectedFile = SwingTools.chooseFile(RapidMinerGUI.getMainFrame(), file, true, type instanceof ParameterTypeDirectory, type.getExtensions(), type.getKeys());
+		File selectedFile = SwingTools.chooseFile(RapidMinerGUI.getMainFrame().getWindow(), file, true, type instanceof ParameterTypeDirectory, type.getExtensions(), type.getKeys());
 		if ((selectedFile != null)) {
 			setText(selectedFile);
 			fireEditingStopped();

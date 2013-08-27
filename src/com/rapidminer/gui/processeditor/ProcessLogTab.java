@@ -30,7 +30,7 @@ import javax.swing.Icon;
 import javax.swing.JPanel;
 
 import com.rapidminer.datatable.DataTable;
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.AbstractUIState;
 import com.rapidminer.gui.tools.ResourceLabel;
 import com.rapidminer.gui.tools.SwingTools;
 import com.rapidminer.gui.viewer.DataTableViewer;
@@ -55,7 +55,7 @@ public class ProcessLogTab extends JPanel implements Dockable {
 		setLayout(new BorderLayout());
 		this.dockKey = new DockKey(key);
 		dockKey.setIcon(DATA_TABLE_ICON);
-		dockKey.setDockGroup(MainFrame.DOCK_GROUP_RESULTS);				
+		dockKey.setDockGroup(AbstractUIState.DOCK_GROUP_RESULTS);				
 	}
 	
 	public void setDataTableViewer(DataTableViewer viewer) {

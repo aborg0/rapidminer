@@ -45,7 +45,7 @@ import com.rapidminer.operator.Operator;
 public class RemoveOperatorStep extends Step {
 
 	private String i18nKey;
-	private Window owner = RapidMinerGUI.getMainFrame();
+	private Window owner = RapidMinerGUI.getMainFrame().getWindow();
 	private Class<? extends Operator> operatorClass;
 	private AlignedSide alignment;
 	private BubbleTo element;

@@ -47,7 +47,7 @@ public class ImportProcessAction extends ResourceAction {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		File file = SwingTools.chooseFile(RapidMinerGUI.getMainFrame(), "import_process", null, true, false, 
+		File file = SwingTools.chooseFile(RapidMinerGUI.getMainFrame().getWindow(), "import_process", null, true, false, 
 				new String[] { RapidMiner.PROCESS_FILE_EXTENSION, "xml" } , 
 				new String[] { "Process File", "Process File" });
 		if (file == null) {

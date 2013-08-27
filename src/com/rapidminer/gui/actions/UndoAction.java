@@ -24,7 +24,7 @@ package com.rapidminer.gui.actions;
 
 import java.awt.event.ActionEvent;
 
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.ProcessState;
 import com.rapidminer.gui.tools.ResourceAction;
 
 
@@ -37,9 +37,9 @@ public class UndoAction extends ResourceAction {
 
 	private static final long serialVersionUID = 4767902062440337756L;
 
-	private MainFrame mainFrame;
+	private ProcessState mainFrame;
 	
-	public UndoAction(MainFrame mainFrame) {
+	public UndoAction(ProcessState mainFrame) {
 		super("undo");
 		this.mainFrame = mainFrame;
 		setCondition(EDIT_IN_PROGRESS, DISALLOWED);

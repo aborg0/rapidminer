@@ -50,7 +50,7 @@ import org.apache.xmlrpc.client.XmlRpcClient;
 
 import com.rapidminer.RapidMiner;
 import com.rapidminer.RapidMiner.ExecutionMode;
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.RapidMinerGUI;
 import com.rapidminer.gui.dialog.BugZillaAssistant;
 import com.rapidminer.gui.tools.ExtendedJScrollPane;
@@ -124,12 +124,11 @@ public class ExtendedErrorDialog extends ButtonDialog {
 		if ((error != null) && (error instanceof UserError) && (((UserError) error).getOperator() != null)) {
 			final String opName = ((UserError) error).getOperator().getName();
 			mainComponent.add(new LinkButton(new ResourceAction("show_offending_operator", opName) {
-
 				private static final long serialVersionUID = 1L;
 
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					MainFrame mainFrame = RapidMinerGUI.getMainFrame();
+					MainUIState mainFrame = RapidMinerGUI.getMainFrame();
 					mainFrame.selectOperator(mainFrame.getProcess().getOperator(opName));
 				}
 			}), BorderLayout.NORTH);

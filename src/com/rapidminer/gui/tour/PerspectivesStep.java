@@ -37,7 +37,7 @@ import com.rapidminer.gui.tools.components.BubbleWindow.AlignedSide;
 public class PerspectivesStep extends Step {
 
 	private String i18nKey, buttonKey;
-	private Window owner = RapidMinerGUI.getMainFrame();
+	private Window owner = RapidMinerGUI.getMainFrame().getWindow();
 	private AlignedSide alignment = AlignedSide.BOTTOM;
 	private boolean showMe;
 	private int perspectiveIndex;

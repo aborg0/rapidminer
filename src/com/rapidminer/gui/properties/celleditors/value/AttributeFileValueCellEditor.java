@@ -71,7 +71,7 @@ public class AttributeFileValueCellEditor extends FileValueCellEditor {
 	private void buttonPressed() {
 		Object value = getCellEditorValue();
 		File file = value == null ? null : RapidMinerGUI.getMainFrame().getProcess().resolveFileName(value.toString());
-		AttributeEditorDialog dialog = new AttributeEditorDialog(RapidMinerGUI.getMainFrame(), exampleSource, file);
+		AttributeEditorDialog dialog = new AttributeEditorDialog(RapidMinerGUI.getMainFrame().getWindow(), exampleSource, file);
 		dialog.setVisible(true);
 		setText(dialog.getFile());
 		fireEditingStopped();

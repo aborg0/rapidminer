@@ -55,6 +55,7 @@ import javax.swing.text.Document;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 
+import com.rapidminer.gui.AbstractUIState;
 import com.rapidminer.gui.MainFrame;
 import com.rapidminer.gui.RapidMinerGUI;
 import com.rapidminer.gui.dialog.SearchDialog;
@@ -351,7 +352,7 @@ public class LoggingViewer extends JPanel implements MouseListener, Dockable {
         if (logFile != null) {
             file = RapidMinerGUI.getMainFrame().getProcess().resolveFileName(logFile);
         }
-        file = SwingTools.chooseFile(RapidMinerGUI.getMainFrame(), file, false, "log", "log file");
+        file = SwingTools.chooseFile(RapidMinerGUI.getMainFrame().getWindow(), file, false, "log", "log file");
         if (file != null) {
             PrintWriter out = null;
             try {
@@ -375,7 +376,7 @@ public class LoggingViewer extends JPanel implements MouseListener, Dockable {
 
     private final DockKey DOCK_KEY = new ResourceDockKey(LOG_VIEWER_DOCK_KEY);
     {
-        DOCK_KEY.setDockGroup(MainFrame.DOCK_GROUP_ROOT);
+        DOCK_KEY.setDockGroup(AbstractUIState.DOCK_GROUP_ROOT);
     }
 
     @Override

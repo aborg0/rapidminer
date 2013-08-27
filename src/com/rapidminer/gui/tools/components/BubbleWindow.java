@@ -704,7 +704,7 @@ public abstract class BubbleWindow extends JDialog {
 		// find the Button and return -1 if we can not find it
 		Component onScreen;
 		try {
-			onScreen = BubbleWindow.findButton(buttonKey, RapidMinerGUI.getMainFrame());
+			onScreen = BubbleWindow.findButton(buttonKey, RapidMinerGUI.getMainFrame().getWindow());
 		} catch (NullPointerException e) {
 			return -1;
 		}
@@ -715,7 +715,7 @@ public abstract class BubbleWindow extends JDialog {
 		int yposition = onScreen.getLocationOnScreen().y;
 		int otherXposition = xposition + onScreen.getWidth();
 		int otherYposition = yposition + onScreen.getHeight();
-		Window frame = RapidMinerGUI.getMainFrame();
+		Window frame = RapidMinerGUI.getMainFrame().getWindow();
 		if (otherXposition <= frame.getWidth() && otherYposition <= frame.getHeight() && xposition > 0 && yposition > 0) {
 			return 1;
 		} else {
@@ -813,7 +813,7 @@ public abstract class BubbleWindow extends JDialog {
 			};
 			if(docKey == null) {
 				//no component was attached but possible there are some side effects
-				RapidMinerGUI.getMainFrame().addComponentListener(compListener);
+				RapidMinerGUI.getMainFrame().getWindow().addComponentListener(compListener);
 			} else {
 				BubbleWindow.this.dockable.getComponent().addComponentListener(compListener);
 				dockListener = new DockingActionListener() {
@@ -915,7 +915,7 @@ public abstract class BubbleWindow extends JDialog {
 			if (addPerspective) {
 				RapidMinerGUI.getMainFrame().getPerspectives().addPerspectiveChangeListener(perspectiveListener);
 			}
-			RapidMinerGUI.getMainFrame().addWindowStateListener(windowListener);
+			RapidMinerGUI.getMainFrame().getWindow().addWindowStateListener(windowListener);
 			listenersAdded = true;
 		}
 
@@ -930,7 +930,7 @@ public abstract class BubbleWindow extends JDialog {
 	protected void unregisterMovementListener() {
 		if(listenersAdded) {
 			if(docKey == null) {
-				RapidMinerGUI.getMainFrame().removeComponentListener(compListener);
+				RapidMinerGUI.getMainFrame().getWindow().removeComponentListener(compListener);
 			} else {
 				BubbleWindow.this.dockable.getComponent().removeComponentListener(compListener);
 				desktop.removeDockingActionListener(dockListener);
@@ -938,7 +938,7 @@ public abstract class BubbleWindow extends JDialog {
 			if (addPerspective) {
 				RapidMinerGUI.getMainFrame().getPerspectives().removePerspectiveChangeListener(perspectiveListener);
 			}
-			RapidMinerGUI.getMainFrame().removeWindowStateListener(windowListener);
+			RapidMinerGUI.getMainFrame().getWindow().removeWindowStateListener(windowListener);
 			listenersAdded = false;
 		}
 	}

@@ -35,7 +35,7 @@ import java.awt.event.MouseMotionListener;
 
 import javax.swing.JPanel;
 
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.AbstractUIState;
 import com.rapidminer.gui.tools.ResourceDockKey;
 import com.vlsolutions.swing.docking.DockKey;
 import com.vlsolutions.swing.docking.Dockable;
@@ -114,7 +114,7 @@ public class OverviewPanel extends JPanel implements Dockable {
 	public static final String OVERVIEW_DOCK_KEY = "overview";
 	private final DockKey DOCK_KEY = new ResourceDockKey(OVERVIEW_DOCK_KEY);
 	{
-		DOCK_KEY.setDockGroup(MainFrame.DOCK_GROUP_ROOT);
+		DOCK_KEY.setDockGroup(AbstractUIState.DOCK_GROUP_ROOT);
 	}
 
 	@Override

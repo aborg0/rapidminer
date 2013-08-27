@@ -24,7 +24,7 @@ package com.rapidminer.gui.actions;
 
 import java.awt.event.ActionEvent;
 
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.ProcessState;
 import com.rapidminer.gui.tools.ResourceAction;
 
 
@@ -37,9 +37,9 @@ public class SaveAsTemplateAction extends ResourceAction {
 
 	private static final long serialVersionUID = 7511982023104159671L;
 		
-	private MainFrame mainFrame;
+	private ProcessState mainFrame;
 	
-	public SaveAsTemplateAction(MainFrame mainFrame) {
+	public SaveAsTemplateAction(ProcessState mainFrame) {
 		super("save_as_template");		
 		this.mainFrame = mainFrame;
 	}

@@ -24,7 +24,7 @@ package com.rapidminer.gui.actions;
 
 import java.awt.event.ActionEvent;
 
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.templates.ManageBuildingBlocksDialog;
 import com.rapidminer.gui.tools.ResourceAction;
 
@@ -38,9 +38,9 @@ public class ManageBuildingBlocksAction extends ResourceAction {
 
 	private static final long serialVersionUID = 3185492398152116698L;
 
-	public MainFrame mainFrame;
+	public MainUIState mainFrame;
 	
-	public ManageBuildingBlocksAction(MainFrame mainFrame) {
+	public ManageBuildingBlocksAction(MainUIState mainFrame) {
 		super("manage_building_blocks");
 		this.mainFrame = mainFrame;
 	}

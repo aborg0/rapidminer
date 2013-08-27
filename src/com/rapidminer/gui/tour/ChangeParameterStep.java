@@ -48,7 +48,7 @@ public class ChangeParameterStep extends Step {
 	private String parameter;
 	private String targetValue;
 	private AlignedSide alignment;
-	private Window owner = RapidMinerGUI.getMainFrame();
+	private Window owner = RapidMinerGUI.getMainFrame().getWindow();
 	private Class<? extends Operator> operatorClass;
 	private ProcessSetupListener listener = null;
 	
@@ -137,4 +137,3 @@ public class ChangeParameterStep extends Step {
 	}
 
 }
-

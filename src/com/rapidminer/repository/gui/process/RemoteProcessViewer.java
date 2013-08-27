@@ -49,7 +49,7 @@ import javax.swing.tree.TreePath;
 import com.rapid_i.repository.wsimport.ProcessResponse;
 import com.rapid_i.repository.wsimport.Response;
 import com.rapidminer.RepositoryProcessLocation;
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.AbstractUIState;
 import com.rapidminer.gui.actions.OpenAction;
 import com.rapidminer.gui.actions.RunRemoteAction;
 import com.rapidminer.gui.tools.ExtendedJScrollPane;
@@ -507,7 +507,7 @@ public class RemoteProcessViewer extends JPanel implements Dockable {
 	public static final String PROCESS_PANEL_DOCK_KEY = "remote_process_viewer";
 	private final DockKey DOCK_KEY = new ResourceDockKey(PROCESS_PANEL_DOCK_KEY);
 	{
-		DOCK_KEY.setDockGroup(MainFrame.DOCK_GROUP_ROOT);
+		DOCK_KEY.setDockGroup(AbstractUIState.DOCK_GROUP_ROOT);
 	}
 
 	@Override
@@ -520,4 +520,3 @@ public class RemoteProcessViewer extends JPanel implements Dockable {
 		return DOCK_KEY;
 	}
 }
-

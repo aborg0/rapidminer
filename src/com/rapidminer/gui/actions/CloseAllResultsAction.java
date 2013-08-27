@@ -24,7 +24,7 @@ package com.rapidminer.gui.actions;
 
 import java.awt.event.ActionEvent;
 
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.RapidMinerGUI;
 import com.rapidminer.gui.tools.ResourceAction;
 import com.rapidminer.gui.tools.dialogs.DecisionRememberingConfirmDialog;
@@ -36,9 +36,9 @@ import com.rapidminer.gui.tools.dialogs.DecisionRememberingConfirmDialog;
  */
 public class CloseAllResultsAction extends ResourceAction {
 
-	private final MainFrame mainframe;
+	private final MainUIState mainframe;
 
-	public CloseAllResultsAction(MainFrame mainframe) {
+	public CloseAllResultsAction(MainUIState mainframe) {
 		super(true, "close_all_results");
 		this.mainframe = mainframe;
 	}

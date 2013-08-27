@@ -58,9 +58,9 @@ public class ConnectPortToRepositoryAction extends ResourceAction {
 		}
 		String location;
 		if (port instanceof OutputPort) {
-			location = RepositoryLocationChooser.selectLocation(processLoc, null, RapidMinerGUI.getMainFrame(), true, false, false, false, false);
+			location = RepositoryLocationChooser.selectLocation(processLoc, null, RapidMinerGUI.getMainFrame().getWindow(), true, false, false, false, false);
 		} else {
-			location = RepositoryLocationChooser.selectLocation(processLoc, null, RapidMinerGUI.getMainFrame(), true, false, false, true, true);
+			location = RepositoryLocationChooser.selectLocation(processLoc, null, RapidMinerGUI.getMainFrame().getWindow(), true, false, false, true, true);
 		}
 		if (location != null) {
 			if (port instanceof OutputPort) {

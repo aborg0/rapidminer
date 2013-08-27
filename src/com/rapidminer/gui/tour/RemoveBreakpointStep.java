@@ -47,7 +47,7 @@ import com.rapidminer.operator.Operator;
 public class RemoveBreakpointStep extends Step {
 	
 	private AlignedSide alignment;
-	private Window owner = RapidMinerGUI.getMainFrame();
+	private Window owner = RapidMinerGUI.getMainFrame().getWindow();
 	private String i18nKey;
 	private BubbleTo element;
 	private Class<? extends Operator> operatorClass;

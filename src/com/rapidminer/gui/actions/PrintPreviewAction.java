@@ -54,14 +54,14 @@ public class PrintPreviewAction extends ResourceAction {
 
 	public void actionPerformed(ActionEvent e) {
 		Printable printer = new ComponentPrinter(component);
-		PreviewDialog dialog = new PreviewDialog("Print Preview", RapidMinerGUI.getMainFrame(), printer, PrintingTools.getPageFormat(), 1);
+		PreviewDialog dialog = new PreviewDialog("Print Preview", RapidMinerGUI.getMainFrame().getWindow(), printer, PrintingTools.getPageFormat(), 1);
 		Component[] dialogComponents = dialog.getContentPane().getComponents();
 		for (Component c : dialogComponents) {
 			if (c instanceof JToolBar)
 				((JToolBar)c).setFloatable(false);
 		}
 		dialog.pack();
-		dialog.setLocationRelativeTo(RapidMinerGUI.getMainFrame());
+		dialog.setLocationRelativeTo(RapidMinerGUI.getMainFrame().getWindow());
 		dialog.setVisible(true);
 	}
 }

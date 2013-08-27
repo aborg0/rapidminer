@@ -180,7 +180,7 @@ public abstract class ReceivingOperatorTransferHandler extends OperatorTransferH
 //					return false;
 //				}
 				if (newOperators == null) {
-					JOptionPane.showMessageDialog(RapidMinerGUI.getMainFrame(), "No reader operator available for file " + file.getName());
+					JOptionPane.showMessageDialog(RapidMinerGUI.getMainFrame().getWindow(), "No reader operator available for file " + file.getName());
 					dropEnds();
 					return false;
 				}

@@ -117,7 +117,7 @@ public class DatabaseExampleVisualization implements ObjectVisualizer {
 			ResultSet rs = statement.executeQuery();
 			
 			// show data
-			final JDialog dialog = new JDialog(RapidMinerGUI.getMainFrame(), "Example: " + objId, false);
+			final JDialog dialog = new JDialog(RapidMinerGUI.getMainFrame().getWindow(), "Example: " + objId, false);
 			dialog.getContentPane().setLayout(new BorderLayout());
 
 	        if (rs != null) {
@@ -164,7 +164,7 @@ public class DatabaseExampleVisualization implements ObjectVisualizer {
 			buttons.add(okButton);
 			dialog.getContentPane().add(buttons, BorderLayout.SOUTH);
 			dialog.pack();
-			dialog.setLocationRelativeTo(RapidMinerGUI.getMainFrame());
+			dialog.setLocationRelativeTo(RapidMinerGUI.getMainFrame().getWindow());
 			dialog.setVisible(true);
 			
 			// clean up

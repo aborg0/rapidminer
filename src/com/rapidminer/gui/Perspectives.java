@@ -112,7 +112,7 @@ public class Perspectives extends ApplicationPerspectives {
 			welcomeDesktop.clear();
 			welcomeDesktop.addDockable(welcomeKey);
 		} else {
-			throw new IllegalArgumentException("Not a predevined perspective: "+perspectiveName);
+			throw new IllegalArgumentException("Not a predefined perspective: "+perspectiveName);
 		}
 	}
 }

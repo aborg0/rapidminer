@@ -47,7 +47,7 @@ public class ExportProcessAction extends ResourceAction {
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		File file = SwingTools.chooseFile(RapidMinerGUI.getMainFrame(), "export_process", null, false, false, 
+		File file = SwingTools.chooseFile(RapidMinerGUI.getMainFrame().getWindow(), "export_process", null, false, false, 
 				new String[] { RapidMiner.PROCESS_FILE_EXTENSION, "xml" } , 
 				new String[] { "Process File", "Process File" });
 		if (file == null) {

@@ -27,7 +27,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.Icon;
 
 import com.rapidminer.Process;
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.ProcessState;
 import com.rapidminer.gui.tools.ResourceAction;
 import com.rapidminer.gui.tools.SwingTools;
 
@@ -46,9 +46,9 @@ public class RunAction extends ResourceAction {
 	private static final Icon ICON_RESUME_SMALL = SwingTools.createIcon("16/media_play_green.png");
 	private static final Icon ICON_RESUME_LARGE = SwingTools.createIcon("24/media_play_green.png");
 	
-    private final MainFrame mainFrame;    
+    private final ProcessState mainFrame;    
     
-    public RunAction(MainFrame mainFrame) {
+    public RunAction(ProcessState mainFrame) {
         super("run");
         this.mainFrame = mainFrame;
         setCondition(PROCESS_RUNNING, DISALLOWED);

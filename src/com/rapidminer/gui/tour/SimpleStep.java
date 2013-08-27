@@ -52,7 +52,7 @@ public class SimpleStep extends Step {
 	 * @param buttonKey i18nKey of the Button to which the {@link Step} listens and the {@link BubbleWindow} will point to.
 	 */
 	public SimpleStep(AlignedSide preferredAlignment, String i18nKey, String buttonKey, boolean isInMenuBar){
-		this(preferredAlignment, i18nKey, buttonKey, isInMenuBar, RapidMinerGUI.getMainFrame());
+		this(preferredAlignment, i18nKey, buttonKey, isInMenuBar, RapidMinerGUI.getMainFrame().getWindow());
 	}
 	
 	/**

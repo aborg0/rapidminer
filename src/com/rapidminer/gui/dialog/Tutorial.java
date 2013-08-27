@@ -24,6 +24,7 @@ package com.rapidminer.gui.dialog;
 
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
@@ -39,7 +40,9 @@ import javax.swing.plaf.FontUIResource;
 import com.rapidminer.Process;
 import com.rapidminer.RepositoryProcessLocation;
 import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.RapidMinerGUI;
+import com.rapidminer.gui.TutorialState;
 import com.rapidminer.gui.tools.ExtendedHTMLJEditorPane;
 import com.rapidminer.gui.tools.ExtendedJScrollPane;
 import com.rapidminer.gui.tools.ResourceAction;
@@ -102,7 +105,7 @@ public class Tutorial extends ButtonDialog implements WindowListener {
 
 	private int state = 0;
 
-	private final MainFrame mainFrame;
+	private final TutorialState mainFrame;
 
 	private final JEditorPane description;
 
@@ -110,7 +113,7 @@ public class Tutorial extends ButtonDialog implements WindowListener {
 
 	private final JButton prevButton, nextButton;
 
-	public Tutorial(MainFrame mainFrame) {
+	public Tutorial(MainUIState mainFrame) {
 		super("tutorial", false,new Object[]{});
 		this.mainFrame = mainFrame;
 		setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -143,7 +146,10 @@ public class Tutorial extends ButtonDialog implements WindowListener {
 		this.setSize(size);
 		this.setMaximumSize(size);
 		this.setPreferredSize(size);
-		setLocationRelativeTo(mainFrame);
+		if (mainFrame.getWindow() instanceof Window) {
+			Window window = (Window) mainFrame.getWindow();
+			setLocationRelativeTo(window);
+		}
 	}
 
 	private void setProcess(String processName) {
@@ -175,7 +181,7 @@ public class Tutorial extends ButtonDialog implements WindowListener {
 		if (state == 0) {
 			prevButton.setEnabled(false);
 			description.setText(SwingTools.text2DisplayHtml(START_TEXT));
-			setLocationRelativeTo(mainFrame);
+			setLocationRelativeTo(mainFrame.getWindow());
 		} else {
 			setProcess(PROCESSES[state - 1]);
 		}

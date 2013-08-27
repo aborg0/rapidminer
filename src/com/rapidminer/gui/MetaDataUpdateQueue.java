@@ -41,9 +41,9 @@ import com.rapidminer.tools.LogService;
  */
 public class MetaDataUpdateQueue extends UpdateQueue {
 
-	private final MainFrame mainFrame;
+	private final MainUIState mainFrame;
 
-	public MetaDataUpdateQueue(MainFrame mainFrame) {
+	public MetaDataUpdateQueue(MainUIState mainFrame) {
 		super("MetaDataValidation");
 		this.mainFrame = mainFrame;		
 		this.setPriority(MIN_PRIORITY);
@@ -58,7 +58,7 @@ public class MetaDataUpdateQueue extends UpdateQueue {
 					public void run() {
 						getProgressListener().setTotal(100);
 						getProgressListener().setCompleted(10);
-						if (force || mainFrame.VALIDATE_AUTOMATICALLY_ACTION.isSelected()) {
+						if (force || mainFrame.getValidateAutomaticallyAction().isSelected()) {
 							process.getRootOperator().checkAll();	
 						} else {
 							process.getRootOperator().checkAllExcludingMetaData();

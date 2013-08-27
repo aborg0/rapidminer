@@ -41,6 +41,7 @@ import com.rapidminer.Process;
 import com.rapidminer.ProcessListener;
 import com.rapidminer.datatable.DataTable;
 import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.MainUIState;
 import com.rapidminer.gui.RapidMinerGUI;
 import com.rapidminer.gui.renderer.RendererService;
 import com.rapidminer.gui.tools.ExtendedJTabbedPane;
@@ -359,7 +360,7 @@ public class TabbedResultDisplay extends JPanel  implements ResultDisplay {
 	public void setSelection(List<Operator> selection) { }
 
 	@Override
-	public void init(MainFrame mainFrame) {
+	public void init(MainUIState mainFrame) {
 	}
 
 	@Override

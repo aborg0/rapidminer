@@ -24,7 +24,7 @@ package com.rapidminer.gui.actions;
 
 import java.awt.event.ActionEvent;
 
-import com.rapidminer.gui.MainFrame;
+import com.rapidminer.gui.TutorialState;
 import com.rapidminer.gui.tools.ResourceAction;
 
 /**
@@ -36,9 +36,9 @@ public class TutorialAction extends ResourceAction {
 
 	private static final long serialVersionUID = -2288398034392104973L;
 
-	private MainFrame mainFrame;
+	private TutorialState mainFrame;
 	
-	public TutorialAction(MainFrame mainFrame) {
+	public TutorialAction(TutorialState mainFrame) {
 		super("tutorial");
 		this.mainFrame = mainFrame;
 	}

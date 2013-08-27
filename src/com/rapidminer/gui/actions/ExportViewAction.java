@@ -87,7 +87,7 @@ public class ExportViewAction extends ResourceAction {
 						};
 						outerPanel.setSize(new Dimension(chartConfigPanel.getPlotEngine().getChartPanel().getWidth(), chartConfigPanel.getPlotEngine().getChartPanel().getHeight()));
 						
-						exportDialog.showExportDialog(RapidMinerGUI.getMainFrame(), "Export", outerPanel, componentName);
+						exportDialog.showExportDialog(RapidMinerGUI.getMainFrame().getWindow(), "Export", outerPanel, componentName);
 						return;
 					} else if (comp.isVisible() && PlotterPanel.class.isAssignableFrom(comp.getClass())) {
 						// special case for PlotterPanel as the Panel itself is wider than the plotter
@@ -106,12 +106,12 @@ public class ExportViewAction extends ResourceAction {
 						};
 						outerPanel.setSize(plotterPanel.getPlotterComponent().getSize());
 						
-						exportDialog.showExportDialog(RapidMinerGUI.getMainFrame(), "Export", outerPanel, componentName);
+						exportDialog.showExportDialog(RapidMinerGUI.getMainFrame().getWindow(), "Export", outerPanel, componentName);
 						return;
 					}
 				}
 			}
 		}
-		exportDialog.showExportDialog(RapidMinerGUI.getMainFrame(), "Export", component, componentName);
+		exportDialog.showExportDialog(RapidMinerGUI.getMainFrame().getWindow(), "Export", component, componentName);
 	}
 }
