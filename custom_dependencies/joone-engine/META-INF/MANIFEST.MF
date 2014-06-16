@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Joone core engine
+Bundle-SymbolicName: joone-engine;singleton:=true
+Bundle-Version: 2.0.0.rc1
+Bundle-ClassPath: joone-engine.jar
+Export-Package: org.joone.engine,
+ org.joone.engine.extenders,
+ org.joone.engine.learning,
+ org.joone.engine.listeners,
+ org.joone.engine.weights,
+ org.joone.exception,
+ org.joone.helpers.factory,
+ org.joone.helpers.structure,
+ org.joone.inspection,
+ org.joone.inspection.implementations,
+ org.joone.io,
+ org.joone.log,
+ org.joone.net,
+ org.joone.script,
+ org.joone.structure,
+ org.joone.util
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy

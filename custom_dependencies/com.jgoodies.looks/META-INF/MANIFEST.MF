@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JGoodies looks
+Bundle-SymbolicName: com.jgoodies.looks;singleton:=true
+Bundle-Version: 2.1.4.qualifier
+Bundle-ClassPath: looks.jar
+Export-Package: com.jgoodies.looks,
+ com.jgoodies.looks.common,
+ com.jgoodies.looks.plastic,
+ com.jgoodies.looks.plastic.theme,
+ com.jgoodies.looks.windows
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy

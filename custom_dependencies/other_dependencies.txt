@@ -1,0 +1,7 @@
+http://mvnrepository.com/artifact/org.apache.servicemix.bundles/org.apache.servicemix.bundles.xpp3/1.1.4c_7
+http://mvnrepository.com/artifact/org.apache.servicemix.bundles/org.apache.servicemix.bundles.xstream/1.4.7_1
+http://mvnrepository.com/artifact/org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-collections/3.2.1_3
+http://mvnrepository.com/artifact/org.apache.servicemix.bundles/org.apache.servicemix.bundles.collections-generic/4.01_1
+http://mvnrepository.com/artifact/org.apache.servicemix.bundles/org.apache.servicemix.bundles.colt/1.2.0_1
+http://mvnrepository.com/artifact/org.apache.servicemix.bundles/org.apache.servicemix.bundles.concurrent/1.3.4_1
+http://repo1.maven.org/maven2/gov/nist/math/jama/gov.nist.math.jama/1.1.1/

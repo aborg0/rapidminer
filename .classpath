@@ -7,28 +7,6 @@
 	<classpathentry kind="src" path="src_test"/>
 	<classpathentry kind="src" path="resources_generated"/>
 	<classpathentry kind="src" path="src_agpl"/>
-	<classpathentry kind="lib" path="lib/kdb.jar"/>
-	<classpathentry kind="lib" path="lib/jmathplot.jar"/>
-	<classpathentry kind="lib" path="lib/xpp3.jar"/>
-	<classpathentry kind="lib" path="lib/xstream.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/jxl.jar"/>
-	<classpathentry kind="lib" path="lib/jugpreview.jar"/>
-	<classpathentry kind="lib" path="lib/joone-engine.jar"/>
-	<classpathentry kind="lib" path="lib/jcommon.jar"/>
-	<classpathentry kind="lib" path="lib/jfreechart.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/junit.jar"/>
-	<classpathentry kind="lib" path="lib/commons-collections.jar"/>
-	<classpathentry kind="lib" path="lib/looks.jar"/>
-	<classpathentry kind="lib" path="lib/collections-generic.jar"/>
-	<classpathentry kind="lib" path="lib/colt.jar"/>
-	<classpathentry kind="lib" path="lib/concurrent.jar"/>
-	<classpathentry kind="lib" path="lib/jama.jar"/>
-	<classpathentry kind="lib" path="lib/jep.jar"/>
-	<classpathentry kind="lib" path="lib/jung-algorithms.jar"/>
-	<classpathentry kind="lib" path="lib/jung-api.jar"/>
-	<classpathentry kind="lib" path="lib/jung-graph-impl.jar"/>
-	<classpathentry kind="lib" path="lib/jung-visualization.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/vldocking.jar" sourcepath="/VLDocking/src"/>
 	<classpathentry exported="true" kind="lib" path="lib/freehep/freehep-export.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/freehep/freehep-graphics2d.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/freehep/freehep-graphicsio-emf.jar"/>
@@ -75,5 +53,6 @@
 	<classpathentry kind="lib" path="lib/jdbc/mysql-connector-java-5.1.24-bin.jar"/>
 	<classpathentry kind="lib" path="lib/jdbc/postgresql-9.2-1002.jdbc4.jar"/>
 	<classpathentry kind="lib" path="lib/jdbc/hsqldb.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="output" path="build"/>
 </classpath>

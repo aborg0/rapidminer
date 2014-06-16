@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JMathPlot (org.math.plot; mu-Labs ltd.)
+Bundle-SymbolicName: com.googlecode.jmathplot2;singleton:=true
+Bundle-Version: 1.0.23.qualifier
+Bundle-ClassPath: jmathplot.jar
+Export-Package: org.math.io,
+ org.math.io.files,
+ org.math.io.littleendian,
+ org.math.io.parser,
+ org.math.io.stream,
+ org.math.plot,
+ org.math.plot.canvas,
+ org.math.plot.components,
+ org.math.plot.plotObjects,
+ org.math.plot.plots,
+ org.math.plot.render,
+ org.math.plot.utils
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: javax.swing.table,
+ javax.swing,
+ javax.swing.event,
+ javax.imageio,
+ javax.swing.filechooser
+Bundle-ActivationPolicy: lazy
