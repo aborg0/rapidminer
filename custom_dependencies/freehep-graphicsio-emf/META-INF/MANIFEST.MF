@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FreeHEP EMF Driver
+Bundle-SymbolicName: org.freehep.freehep-graphicsio-emf;singleton:=true
+Bundle-Version: 2.0.0.qualifier
+Bundle-ClassPath: freehep-graphicsio-emf.jar
+Export-Package: org.freehep.graphicsio.emf,
+ org.freehep.graphicsio.emf.gdi
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.freehep.freehep-graphicsio;bundle-version="2.0.0",
+ hep.aida;bundle-version="2.0.0";resolution:=optional,
+ org.freehep.graphicsio-tests;bundle-version="2.0.0";resolution:=optional,
+ org.jdom;bundle-version="1.1";resolution:=optional

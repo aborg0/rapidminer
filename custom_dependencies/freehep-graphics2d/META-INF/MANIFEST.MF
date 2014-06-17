@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FreeHEP Graphics2D
+Bundle-SymbolicName: org.freehep.freehep-graphics2d;singleton:=true
+Bundle-Version: 2.0.0.qualifier
+Bundle-ClassPath: freehep-graphics2d.jar
+Export-Package: org.freehep.graphics2d,
+ org.freehep.graphics2d.font
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.freehep.freehep-util;bundle-version="2.0.1"

@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FreeHEP GraphicsIO
+Bundle-SymbolicName: org.freehep.freehep-graphicsio;singleton:=true
+Bundle-Version: 2.0.0.qualifier
+Bundle-ClassPath: freehep-graphicsio.jar
+Export-Package: org.freehep.graphicsio,
+ org.freehep.graphicsio.exportchooser,
+ org.freehep.graphicsio.font,
+ org.freehep.graphicsio.font.truetype,
+ org.freehep.graphicsio.gif,
+ org.freehep.graphicsio.png,
+ org.freehep.graphicsio.ppm,
+ org.freehep.graphicsio.raw
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.freehep.freehep-graphics2d;bundle-version="2.0.0",
+ org.freehep.freehep-export;bundle-version="2.0.3",
+ org.freehep.freehep-io;bundle-version="2.0.1"

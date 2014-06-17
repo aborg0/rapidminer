@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FreeHEP XML
+Bundle-SymbolicName: org.freehep.freehep-xml;singleton:=true
+Bundle-Version: 2.0.1.qualifier
+Bundle-ClassPath: freehep-xml.jar
+Export-Package: org.freehep.xml.io,
+ org.freehep.xml.menus,
+ org.freehep.xml.menus.test,
+ org.freehep.xml.util
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.freehep.freehep-io;bundle-version="2.0.1",
+ org.freehep.freehep-util;bundle-version="2.0.1",
+ org.freehep.freehep-swing;bundle-version="2.0.2",
+ org.jdom;bundle-version="1.1";resolution:=optional

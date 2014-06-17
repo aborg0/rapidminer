@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FreeHEP Util
+Bundle-SymbolicName: org.freehep.freehep-util;singleton:=true
+Bundle-Version: 2.0.1.qualifier
+Bundle-ClassPath: freehep-util.jar
+Export-Package: org.freehep.util,
+ org.freehep.util.images,
+ org.freehep.util.template
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: org.openide.util.lookup;version="1.9";resolution:=optional

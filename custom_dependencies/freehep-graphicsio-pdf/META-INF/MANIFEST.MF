@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FreeHEP PDF Driver
+Bundle-SymbolicName: org.freehep.freehep-graphicsio-pdf;singleton:=true
+Bundle-Version: 2.0.0
+Bundle-ClassPath: freehep-graphicsio-pdf.jar
+Export-Package: org.freehep.graphicsio.pdf;version="2.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.freehep.freehep-graphicsio;bundle-version="2.0.0",
+ org.freehep.graphicsio-tests;bundle-version="2.0.0";resolution:=optional

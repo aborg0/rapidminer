@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FreeHEP IO
+Bundle-SymbolicName: org.freehep.freehep-io;singleton:=true
+Bundle-Version: 2.0.1.qualifier
+Bundle-ClassPath: freehep-io.jar
+Export-Package: org.freehep.util.io;version="2.0.1.qualifier"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.freehep.freehep-util;bundle-version="2.0.1";resolution:=optional

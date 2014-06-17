@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: FreeHEP Swing
+Bundle-SymbolicName: org.freehep.freehep-swing;singleton:=true
+Bundle-Version: 2.0.2.qualifier
+Bundle-ClassPath: freehep-swing.jar
+Export-Package: org.freehep.swing,
+ org.freehep.swing.event,
+ org.freehep.swing.graphics,
+ org.freehep.swing.images,
+ org.freehep.swing.layout,
+ org.freehep.swing.plaf.metal,
+ org.freehep.swing.popup,
+ org.freehep.swing.print.table,
+ org.freehep.swing.table,
+ org.freehep.swing.test,
+ org.freehep.swing.treetable,
+ org.freehep.swing.undo,
+ org.freehep.swing.wizard
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.freehep.freehep-util;bundle-version="2.0.1"
