@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SassyReader
+Bundle-SymbolicName: org.eobjects.sassyreader;singleton:=true
+Bundle-Version: 0.5.0.qualifier
+Bundle-ClassPath: SassyReader-0.5.jar
+Export-Package: org.eobjects.sassy,
+ org.eobjects.sassy.metamodel
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
