@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Java Expression Parser (JEP)
+Bundle-SymbolicName: org.scijava.jep;singleton:=true
+Bundle-Version: 2.4.1.qualifier
+Bundle-ClassPath: jep.jar
+Export-Package: org.nfunk.jep,
+ org.nfunk.jep.evaluation,
+ org.nfunk.jep.function,
+ org.nfunk.jep.type
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Require-Bundle: gov.nist.math.jama.gov.nist.math.jama;bundle-version="1.1.1"
