@@ -7,6 +7,8 @@
 	<classpathentry kind="src" path="src_test"/>
 	<classpathentry kind="src" path="resources_generated"/>
 	<classpathentry kind="src" path="src_agpl"/>
+	<classpathentry exported="true" kind="lib" path="lib/launcher.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/rapidminer.jar"/>
 	<classpathentry kind="lib" path="lib/mail.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/commons-lang-2.4.jar"/>
 	<classpathentry kind="lib" path="lib/groovy-all-1.7.7.jar"/>
