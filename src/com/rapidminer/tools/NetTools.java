@@ -27,6 +27,8 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLStreamHandler;
 import java.net.URLStreamHandlerFactory;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import com.rapidminer.gui.tools.SwingTools;
 
@@ -45,11 +47,9 @@ public class NetTools {
 
 	private static boolean initialized = false;
 
-	public static void init() {
-		if (!initialized) {
-			URL.setURLStreamHandlerFactory(new URLStreamHandlerFactory() {
-				@Override
-				public URLStreamHandler createURLStreamHandler(String protocol) {
+	public static final URLStreamHandlerFactory fac = new URLStreamHandlerFactory() {
+		@Override
+		public URLStreamHandler createURLStreamHandler(final String protocol) {
 					if (ICON_PROTOCOLL.equals(protocol)) {
 						return new URLStreamHandler() {
 							@Override
@@ -81,7 +81,18 @@ public class NetTools {
 					}
 					return null;
 				}
-			});
+	};
+
+	public static void init() {
+		if (!initialized) {
+			try {
+				URL.setURLStreamHandlerFactory(fac);
+			} catch (final Throwable e) {
+				Logger.getAnonymousLogger()
+						.log(Level.WARNING,
+								"Failed to set the stream handler factory. Maybe because of the OSGi preset.",
+								e);
+			}
 			initialized = true;
 		}
 	}
