@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Export-Package: org.fife.rsta.ac,org.fife.rsta.ac.java,org.fife.rsynta
+ xarea.internal,org.fife.ui.autocomplete,org.fife.ui.rsyntaxtextarea,o
+ rg.fife.ui.rsyntaxtextarea.folding,org.fife.ui.rsyntaxtextarea.parser
+ ,org.fife.ui.rtextarea
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: autocomplete_2.0.4.jar,rsta-language-support_0.9.0.j
+ ar,rsyntaxtextarea_2.0.4.1.jar,.
+Bundle-Name: Fifesoft RSyntaxTextArea
+Created-By: 1.7.0_60-b19 (Oracle Corporation)
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Ant-Version: Apache Ant 1.8.4
+DynamicImport-Package: *
+Bundle-Vendor: KNIME GmbH, Konstanz, Germany
+Bundle-Version: 2.0.4.0042431
+Bundle-Activator: org.fife.rsyntaxarea.internal.RSyntaxAreaActivator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.fife.rsyntaxtextarea;singleton:=true
+
+Name: LICENSE
+SHA1-Digest: yp25bktSytkWCDzB675l6kKfH0Y=
+
+Name: rsyntaxtextarea_2.0.4.1.jar
+SHA1-Digest: Bt4yoRQfTgv0d91pfMEsuydHmfo=
+
+Name: org/fife/rsyntaxarea/internal/RSyntaxAreaActivator.class
+SHA1-Digest: EWuPcHDqRGs+XyVEmG4blDBsHrU=
+
+Name: README
+SHA1-Digest: hF5hfnF/bPpS4MV2u+z6r7B1irk=
+
+Name: rsta-language-support_0.9.0.jar
+SHA1-Digest: IpRoEEPT/Nt4MiSVek92WzoJ1ow=
+
+Name: autocomplete_2.0.4.jar
+SHA1-Digest: IydC+ZghLoxOPTJrvasA+JAVE9U=
+

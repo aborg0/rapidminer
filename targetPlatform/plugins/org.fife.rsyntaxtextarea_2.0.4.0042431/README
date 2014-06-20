@@ -1,0 +1,12 @@
+This project contains the following libraries from Fifesoft (http://fifesoft.com/), all available under a 
+modified BSD license (see LICENSE):
+
+RText is an open-source programmer's text editor. Syntax highlighting for over 30 languages. 
+Fully customizable interface. Runs on Windows, Linux and OS X, and available under a modified BSD license.
+
+RSyntaxTextArea is the syntax highlighting text editor used in RText, pulled out into its own jar so
+it is easily usable in any application. Available under a modified BSD license.
+ 
+AutoComplete is a library allowing you to add IDE-like auto-completion (aka "code completion" or 
+"Intellisense") to any Swing JTextComponent. Special integration is added for RSyntaxTextArea, 
+since this feature is commonly needed when editing source code.

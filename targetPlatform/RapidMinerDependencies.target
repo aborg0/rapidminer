@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="RapidMiner dependencies" sequenceNumber="8">
+<locations>
+<location path="${container_loc:/rapidminer/targetPlatform/plugins}" type="Directory"/>
+</locations>
+<includeBundles>
+<plugin id="com.itextpdf"/>
+<plugin id="gov.nist.math.jama.gov.nist.math.jama"/>
+<plugin id="groovy-all"/>
+<plugin id="javax.mail"/>
+<plugin id="javax.xml"/>
+<plugin id="javax.xml.stream"/>
+<plugin id="jxl-osgi"/>
+<plugin id="org.apache.commons.codec" version="1.9.0"/>
+<plugin id="org.apache.commons.httpclient"/>
+<plugin id="org.apache.commons.lang"/>
+<plugin id="org.apache.commons.logging"/>
+<plugin id="org.apache.ivy"/>
+<plugin id="org.apache.servicemix.bundles.collections-generic"/>
+<plugin id="org.apache.servicemix.bundles.colt"/>
+<plugin id="org.apache.servicemix.bundles.commons-collections"/>
+<plugin id="org.apache.servicemix.bundles.concurrent"/>
+<plugin id="org.apache.servicemix.bundles.dom4j"/>
+<plugin id="org.apache.servicemix.bundles.poi"/>
+<plugin id="org.apache.servicemix.bundles.ws-commons-util"/>
+<plugin id="org.apache.servicemix.bundles.xmlbeans"/>
+<plugin id="org.apache.servicemix.bundles.xmlpull"/>
+<plugin id="org.apache.servicemix.bundles.xmlrpc-client"/>
+<plugin id="org.apache.servicemix.bundles.xpp3"/>
+<plugin id="org.apache.servicemix.bundles.xstream"/>
+<plugin id="org.apache.xmlbeans"/>
+<plugin id="org.fife.rsyntaxtextarea"/>
+<plugin id="org.hamcrest.core"/>
+<plugin id="org.jfreechart"/>
+<plugin id="org.junit"/>
+<plugin id="org.ops4j.pax.tipi.net.sf.jung.algorithms"/>
+<plugin id="org.ops4j.pax.tipi.net.sf.jung.graph.impl"/>
+<plugin id="org.ops4j.pax.tipi.net.sf.jung.visualization"/>
+<plugin id="slf4j.api"/>
+<plugin id="slf4j.simple"/>
+</includeBundles>
+<targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+</target>

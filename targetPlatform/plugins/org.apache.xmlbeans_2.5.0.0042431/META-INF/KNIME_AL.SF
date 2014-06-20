@@ -1,0 +1,739 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: RcJgAPpRYfbNBewT8iBAI6zOZ9E=
+Created-By: 1.7.0_60 (Oracle Corporation)
+SHA1-Digest-Manifest: CrX+BNoS1ZFPt8sr3NAl0ewVhlY=
+
+Name: lib/xbean_xpath.jar
+SHA1-Digest: oI23K4W7LhOVpor2v23ffvF1dlY=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaAttributeGroup.Ref.html
+SHA1-Digest: euaweADf1zvPv/o7JxUzc0Tge5c=
+
+Name: docs/reference/org/apache/xmlbeans/XmlTime.Factory.html
+SHA1-Digest: coa3Y/CbUg93P3C55EkyZf5VS40=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaStringEnumEntry.html
+SHA1-Digest: Lct2xLdz7ZFCsN8ciIVeyjoIEzg=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDateTime.html
+SHA1-Digest: kGvZGyXjq9MRSR8+zfO2DrM5Lkg=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNormalizedString.html
+SHA1-Digest: NKFbOl616oFTGf7XgPBiZn5UeO4=
+
+Name: lib/xbean.jar
+SHA1-Digest: WysUZtbZbsMRPgr1Nbp0eJNzhD8=
+
+Name: docs/guide/conXMLBeansSupportBuiltInSchemaTypes.html
+SHA1-Digest: Sdd/SuxBIbT+7dFubl0Xv0p0Rd8=
+
+Name: bin/_setlib.cmd
+SHA1-Digest: 7+gbz1XarU8eDxl4gtGx30AaSkA=
+
+Name: docs/reference/org/apache/xmlbeans/XmlAnySimpleType.html
+SHA1-Digest: E+tK/Wa0B+uSH6EA6nehlnHh8ZA=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaBookmark.html
+SHA1-Digest: BsrpaOGwRPDuhGHTRiyT7huMeg8=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaCodePrinter.html
+SHA1-Digest: x76xwm0oA9VmTaeas70ExbQjRXk=
+
+Name: docs/reference/org/apache/xmlbeans/GDurationBuilder.html
+SHA1-Digest: yeDk9ztNEZ+PCqGLN1cuEyxNZdc=
+
+Name: docs/reference/allclasses-frame.html
+SHA1-Digest: b2EQiCOK7cXd4UTRHv0HbtgfoV4=
+
+Name: docs/reference/org/apache/xmlbeans/GDurationSpecification.html
+SHA1-Digest: T0ItJBpfB2JR/0o4ydX3fRBLXm0=
+
+Name: docs/reference/org/apache/xmlbeans/package-tree.html
+SHA1-Digest: oQw2dTn/IBGHpB3TIEdANSzujRo=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDecimal.html
+SHA1-Digest: g4qpk9JGvg7imINf1huKgOyuguY=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaComponent.Ref.html
+SHA1-Digest: PA+dZYvdHFhVqbVZf3blzR/dhsU=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaAttributeGroup.html
+SHA1-Digest: N2gUoxq+wW8ABfZgkYdCTdqBcPo=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDuration.html
+SHA1-Digest: JVAkOCj1aRUHHNZacvYLcBswC70=
+
+Name: docs/reference/org/apache/xmlbeans/XmlError.html
+SHA1-Digest: 0VSDQfzC/M/Sr/FijldQpDxeZUI=
+
+Name: docs/guide/conGettingStartedwithXMLBeans.html
+SHA1-Digest: CCrepr+z4anWvLrAf/M4ftZPtZs=
+
+Name: bin/validate.cmd
+SHA1-Digest: Rty1UvWxHCKbj+K40q73h3x5mvY=
+
+Name: docs/reference/org/apache/xmlbeans/XmlUnsignedShort.html
+SHA1-Digest: M2Bl0texQ3uSQmAH3/0kIfEsCGo=
+
+Name: docs/reference/org/apache/xmlbeans/ResourceLoader.html
+SHA1-Digest: YqvRau/i4oURd58hla71+LVV4EE=
+
+Name: docs/guide/tools.html
+SHA1-Digest: rTFP4dYJ51tLODKElE7D0pqp22s=
+
+Name: docs/reference/org/apache/xmlbeans/XmlGMonth.Factory.html
+SHA1-Digest: LzZAATWBG+/2MByXx5N239NJStI=
+
+Name: docs/reference/org/apache/xmlbeans/XmlIDREF.Factory.html
+SHA1-Digest: Vy1RwZQbsLjZ5bcdGfKdeFVdJu4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNOTATION.Factory.html
+SHA1-Digest: yjq0ggfAWJ8tsKxF6bJh1w4cK9E=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaGlobalAttribute.Ref.htm
+ l
+SHA1-Digest: tLZ0dU6DRD4+ayGcn8GlYB+3s5o=
+
+Name: docs/reference/org/apache/xmlbeans/XmlENTITIES.html
+SHA1-Digest: gsottRpKBgPI8lIj0MLcfJ6BNYs=
+
+Name: bin/xsd2inst.cmd
+SHA1-Digest: 1juErU+DS54LRQup88q15hA64U0=
+
+Name: docs/reference/org/apache/xmlbeans/XmlName.Factory.html
+SHA1-Digest: Zlf4pmw4bb/aLG6KZHUvA8aMGgA=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNonNegativeInteger.html
+SHA1-Digest: Zd3ckuXQ4dGFYufl0hRtDY5KDG4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlFactoryHook.ThreadContext.
+ html
+SHA1-Digest: rk2FNVNBCbMWwSp24cXjk8+zH8w=
+
+Name: docs/reference/org/apache/xmlbeans/XmlUnsignedByte.html
+SHA1-Digest: X7SMYd9sbpBIbiZ0NHYe13LEXZ0=
+
+Name: bin/xsd2inst
+SHA1-Digest: iQT+MNJVXtdbs3emaM1ejfB7uIc=
+
+Name: bin/scomp.cmd
+SHA1-Digest: 3/ygl7A4XJ6r+whJ/1IpyKG+uzk=
+
+Name: docs/reference/org/apache/xmlbeans/XmlAnyURI.html
+SHA1-Digest: HIvJUkQXRMxtZAD0IcVwFtV+f3A=
+
+Name: docs/reference/org/apache/xmlbeans/XmlFloat.html
+SHA1-Digest: ous0PyCgLmorIzCb0adjUORfi3o=
+
+Name: NOTICE.txt
+SHA1-Digest: ep2vRucwSouZePRXiwoKyer0KAw=
+
+Name: docs/reference/org/apache/xmlbeans/XmlCursor.TokenType.html
+SHA1-Digest: omQSyJZCjx+aAExoZxIFSHzN8eE=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDuration.Factory.html
+SHA1-Digest: PbmEVYzcGiKCsP4JReqKfkvrPWc=
+
+Name: docs/reference/org/apache/xmlbeans/XmlCursor.ChangeStamp.html
+SHA1-Digest: tbDEB+t9uccju/NhryvVRTaSLlE=
+
+Name: docs/reference/org/apache/xmlbeans/XmlPositiveInteger.html
+SHA1-Digest: xTiP62Xuw48sJDD5HOTs60Scmwg=
+
+Name: docs/guide/conUsingBookmarksToAnnotateXML.html
+SHA1-Digest: qIaiVM+lZ+/QsvM4NtED2Fh68gc=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaComponent.html
+SHA1-Digest: Fw45ROcfJUb0ETAvHmgu8SvOOPE=
+
+Name: docs/reference/javax/xml/namespace/package-summary.html
+SHA1-Digest: PTwvZ+XL7cjqf8+evt5Bpuc09Fo=
+
+Name: bin/xpretty.cmd
+SHA1-Digest: 2El0zQhpX6Tkr71T0hniTN+/Z0Q=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaProperty.html
+SHA1-Digest: xZo62aLqfEbPwTYYvbxgudt2+7Y=
+
+Name: docs/reference/index.html
+SHA1-Digest: bnn1aygkQjtPe9X4uDxy6kMp4WM=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaField.html
+SHA1-Digest: b8KN0II2FJ0MmGt7dlGG702EsQI=
+
+Name: docs/reference/org/apache/xmlbeans/XmlQName.html
+SHA1-Digest: 9KNstuULVV3wvIijLJbfdLj4hHk=
+
+Name: docs/reference/org/apache/xmlbeans/XmlName.html
+SHA1-Digest: klPQEMfX97yF+RVOeQlAnN50t40=
+
+Name: docs/reference/org/apache/xmlbeans/XmlUnsignedLong.Factory.html
+SHA1-Digest: jQwW8HFsQwxmItnx7/iz2uP6tf4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlInt.Factory.html
+SHA1-Digest: 0jU8jpL0cidoBzp1H05cRAYppBM=
+
+Name: docs/reference/serialized-form.html
+SHA1-Digest: zn3jCQm8jwKukObVWNu07RZkeKk=
+
+Name: docs/reference/org/apache/xmlbeans/QNameSetBuilder.html
+SHA1-Digest: uIki6jULPTAv9AYt9qcAv39n2GQ=
+
+Name: docs/reference/org/apache/xmlbeans/XmlGMonthDay.html
+SHA1-Digest: NhuKsyeMGHVnP3SL02w9IiJEJjA=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaType.html
+SHA1-Digest: LYwcUXNrqQ4krdfRbZirqpvjOcA=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaLocalElement.html
+SHA1-Digest: pgOJuuxoTzx7B8v3T6gR+JwJXbQ=
+
+Name: docs/reference/org/apache/xmlbeans/XmlLineNumber.html
+SHA1-Digest: cLgkEgNc2SdpWkgUvm3RJxDhBSI=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaGlobalElement.html
+SHA1-Digest: daXEVMcplwpkLhn9PjJNEXikcq4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlPositiveInteger.Factory.ht
+ ml
+SHA1-Digest: AOKfHpauiJebJ2WNJzOjanYgzOc=
+
+Name: docs/reference/org/apache/xmlbeans/XmlException.html
+SHA1-Digest: HYvhEqEHLDR3q4M3EwA9fvZs7Jk=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaAttributeModel.html
+SHA1-Digest: tNIT7M3dJNF25o2pwIR8TaPrPg0=
+
+Name: docs/reference/org/apache/xmlbeans/XmlBase64Binary.html
+SHA1-Digest: AiEiJHbwI8kfRDaDjoFI5i5M38s=
+
+Name: docs/reference/org/apache/xmlbeans/XmlHexBinary.html
+SHA1-Digest: y3u0RaIp51eULkd4xASZKbyoJ/k=
+
+Name: docs/reference/org/apache/xmlbeans/XmlToken.html
+SHA1-Digest: vsp36D1HrtelJTPQvNCJMwZv9Xw=
+
+Name: docs/guide/conIntroToTheSchemaTypeSystem.html
+SHA1-Digest: onZHs8SHTEKtbAJMFtZg1gP71Gk=
+
+Name: docs/reference/org/apache/xmlbeans/XmlENTITIES.Factory.html
+SHA1-Digest: ZF0qr7PE1Zh7PrrIT2uyXtxgpp4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNMTOKEN.Factory.html
+SHA1-Digest: pRom33Vv8badxt/JKa0tO6FRDf8=
+
+Name: bin/scopy.cmd
+SHA1-Digest: Hduv/LlrDFwMPKNT7ed+CPY4/W0=
+
+Name: docs/reference/org/apache/xmlbeans/XmlGYearMonth.html
+SHA1-Digest: Y1xSKUFknV8Ms87nlxpx/QHN+Zg=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaAnnotation.Attribute.ht
+ ml
+SHA1-Digest: C/7RCxGQRsvcnbNaf1krcu8uzWM=
+
+Name: docs/reference/org/apache/xmlbeans/XmlBoolean.html
+SHA1-Digest: GqMZicIBxMqMXuPxjQMdLpYCERM=
+
+Name: docs/reference/org/apache/xmlbeans/XmlBeans.html
+SHA1-Digest: 007tJHE0c+hbMGMGyppuBKbO+F8=
+
+Name: docs/reference/org/apache/xmlbeans/XmlUnsignedByte.Factory.html
+SHA1-Digest: R98vtGuHyE6v7fXhDfsmdOiNJ9U=
+
+Name: docs/reference/org/apache/xmlbeans/XmlOptions.html
+SHA1-Digest: EgZDVJXWOi3gOzLp+VRqgw5XbGA=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaTypeLoader.html
+SHA1-Digest: NpK32zjh0wIvIrISlv6Rnu3w6P8=
+
+Name: docs/reference/javax/xml/namespace/package-tree.html
+SHA1-Digest: tDtFfcem6eujHNp2FAz1Vk677eg=
+
+Name: docs/reference/org/apache/xmlbeans/XmlLong.html
+SHA1-Digest: +FE+uO1iAmiluDJ+s8F99JxdRz4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNormalizedString.Factory.h
+ tml
+SHA1-Digest: XrDjsIbyO38bEI/FKtTEhJsxz44=
+
+Name: docs/xmlbeans.css
+SHA1-Digest: lEiePHEyH5jriY5GAWZsXjhOMR0=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDate.html
+SHA1-Digest: emymeARrP5DBOmo8KTChFky2VO4=
+
+Name: docs/reference/org/apache/xmlbeans/UserType.html
+SHA1-Digest: Mzcs1A2sws1d3tYF+IY/xUguVfM=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNOTATION.html
+SHA1-Digest: 4//EaI439X0LynCLRiaZVIPa/H8=
+
+Name: docs/reference/help-doc.html
+SHA1-Digest: 02eA4nu2xcjP8igbFynxjF3Y7t4=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaModelGroup.Ref.html
+SHA1-Digest: hYUjl0r+ayCT0AruV2XWXsYRLf4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlShort.html
+SHA1-Digest: jZo87c9YXDIXS2g5//t2B+ZT+8A=
+
+Name: bin/sfactor
+SHA1-Digest: 6cslAEc3ofrwmWUXu+1r0gl40wM=
+
+Name: bin/scomp
+SHA1-Digest: MDNp718PzQa8xOE5Y3pGxXs7Rtw=
+
+Name: docs/reference/org/apache/xmlbeans/XmlBase64Binary.Factory.html
+SHA1-Digest: 2qW4nY2+001qasdUIIGDfldzQiQ=
+
+Name: docs/reference/org/apache/xmlbeans/XmlByte.html
+SHA1-Digest: Xvh+uxfT4oC/TctiMPuyGIsuiu0=
+
+Name: docs/reference/org/apache/xmlbeans/StringEnumAbstractBase.Table.
+ html
+SHA1-Digest: Y5rzdL76+4sSBkGEztv5HjF/Wv0=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaAnnotation.html
+SHA1-Digest: qWvc0wupC0Nx0TY9DRmCuOZASw4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlQName.Factory.html
+SHA1-Digest: GPlVuvcMMxArh0DNytBGd/Sdx04=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaGlobalElement.Ref.html
+SHA1-Digest: 6HM55dGXUUXZ8+KhsF0YSOLgJEE=
+
+Name: docs/reference/org/apache/xmlbeans/XmlID.Factory.html
+SHA1-Digest: ONMnoQSw4WdgqkFZUj753qr31P0=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNMTOKENS.Factory.html
+SHA1-Digest: TnIWd9hJMjbqTVrWFWinQtfLqTU=
+
+Name: docs/reference/org/apache/xmlbeans/XmlObject.html
+SHA1-Digest: l1iwirOiELn0uLq1HGsbOtLocZM=
+
+Name: docs/reference/org/apache/xmlbeans/XmlUnsignedLong.html
+SHA1-Digest: eGz/mhxQGlOcXaeJy1FyIvQl3T0=
+
+Name: docs/reference/index-all.html
+SHA1-Digest: koTAUA5eUfCQjwqWwha5AtK+G/4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDouble.Factory.html
+SHA1-Digest: uVUvgWj9bKh0JvSFItyQZP3PoS0=
+
+Name: docs/reference/org/apache/xmlbeans/XmlHexBinary.Factory.html
+SHA1-Digest: Udqwx5AC062k7HtMu40uvHml2kE=
+
+Name: docs/reference/packages.html
+SHA1-Digest: sE6z/KisciPJ/ArrUztZgIv2dVo=
+
+Name: docs/reference/org/apache/xmlbeans/XmlLong.Factory.html
+SHA1-Digest: 7YF15xzwwI7wvpbIF8bCcYhXId8=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNCName.html
+SHA1-Digest: KNI23ATDL8+M9tkeMSvy2WW/8MI=
+
+Name: docs/reference/org/apache/xmlbeans/QNameSetSpecification.html
+SHA1-Digest: Uu0mrlWmyYAxSdlzI/f0oIApMlY=
+
+Name: docs/reference/org/apache/xmlbeans/Filer.html
+SHA1-Digest: E0xTMkgGoUowwmIahtb65jimuBM=
+
+Name: docs/reference/org/apache/xmlbeans/GDate.html
+SHA1-Digest: dOceagqLoHtFMg+H3woQC7v7tP4=
+
+Name: docs/reference/overview-frame.html
+SHA1-Digest: o853oJWCbYTnZb9lzGCW5MZlV34=
+
+Name: docs/guide/conMethodsForGeneratedJavaTypes.html
+SHA1-Digest: 0h022buZs0iLeRBRW4+2S5bnpGA=
+
+Name: docs/guide/conSelectingXMLwithXQueryPathXPath.html
+SHA1-Digest: qiqsj77t04SJ8gW++PupCEkQGgM=
+
+Name: bin/xstc
+SHA1-Digest: tekaBMvVhHGYQ/jCNpBkJWMBY7A=
+
+Name: docs/reference/org/apache/xmlbeans/PrePostExtension.html
+SHA1-Digest: bk54/B5cD/9QeUTwjzbUOSlETvU=
+
+Name: docs/reference/org/apache/xmlbeans/XmlUnsignedShort.Factory.html
+SHA1-Digest: 9Y9haIy++F7it2hicflon3PdMXs=
+
+Name: docs/reference/org/apache/xmlbeans/XmlUnsignedInt.html
+SHA1-Digest: Q13IKiRIPLH4B0KCAy6hR6C8Iaw=
+
+Name: docs/reference/org/apache/xmlbeans/XmlString.Factory.html
+SHA1-Digest: F6swPP3bX9CWDA9jgkf5ip/PoMo=
+
+Name: docs/reference/org/apache/xmlbeans/XmlSimpleList.html
+SHA1-Digest: U8B7U14EcXrG21V643LF6y7aoS8=
+
+Name: bin/_setlib
+SHA1-Digest: gysawAuuldGHACeXWvcqsqHuGc8=
+
+Name: docs/reference/org/apache/xmlbeans/XmlOptionCharEscapeMap.html
+SHA1-Digest: U5VMnIG0CN/y3jcPP6ivIpkH6LE=
+
+Name: docs/reference/org/apache/xmlbeans/SimpleValue.html
+SHA1-Digest: /zj6SpwJaGdYnlbS/8Gzi1hN//Q=
+
+Name: bin/inst2xsd.cmd
+SHA1-Digest: bqOLMu/ttDGAbkXBYFNLeAFASmg=
+
+Name: bin/svalidate
+SHA1-Digest: PJgbibrqixjF90SF209EAL97vDs=
+
+Name: docs/reference/org/apache/xmlbeans/XmlValidationError.html
+SHA1-Digest: 4KQQoAUumCEEx2Po8BWYKxACfF4=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaIdentityConstraint.html
+SHA1-Digest: 7oiNAfu184GZiARpLwGe11dyNBU=
+
+Name: docs/reference/org/apache/xmlbeans/QNameCache.html
+SHA1-Digest: ozguz8KFdXw9w++gkSSOk94kC2s=
+
+Name: bin/svalidate.cmd
+SHA1-Digest: e/G6r7dmB9Su0kALj3ZblbVFEms=
+
+Name: docs/reference/org/apache/xmlbeans/XmlUnsignedInt.Factory.html
+SHA1-Digest: Gkj1WCNEJL9iy96HPsU04Qr+xUE=
+
+Name: docs/reference/org/apache/xmlbeans/XmlIDREF.html
+SHA1-Digest: 60gfUhKHko0HmLTqWZ+DeC/VuZc=
+
+Name: docs/reference/org/apache/xmlbeans/XmlInteger.Factory.html
+SHA1-Digest: rwhtGkDpRBXToXtuRRbhRM+9KIM=
+
+Name: docs/reference/org/apache/xmlbeans/CDataBookmark.html
+SHA1-Digest: wW8oaPJw9t5WMZniGKDH8NGJNYw=
+
+Name: docs/reference/stylesheet.css
+SHA1-Digest: 2ETyK+KcG5upM74lg60POyHwBV8=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNonNegativeInteger.Factory
+ .html
+SHA1-Digest: nTZTnnhEhpN/1meBypgxqvGpVk4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNMTOKENS.html
+SHA1-Digest: BJEK5ZyLSusAX8+q6GF0fz1wn0s=
+
+Name: docs/reference/org/apache/xmlbeans/package-frame.html
+SHA1-Digest: 9HM7PdzKbQu3c3LbCBL4kBxCyEg=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaLocalAttribute.html
+SHA1-Digest: os5QOcDN16upYCo4j456SljPzZ4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlCursor.XmlMark.html
+SHA1-Digest: qWsJsKI1QpOI/FxOK98/fpQ3U10=
+
+Name: bin/xpretty
+SHA1-Digest: QQoQCFV3l5d5P3PoykFNWmZPJ3I=
+
+Name: bin/sdownload.cmd
+SHA1-Digest: 3rhXueTbYC+wwf2oeVWEeplbyjU=
+
+Name: docs/reference/org/apache/xmlbeans/XmlFloat.Factory.html
+SHA1-Digest: x2EeDxAnaK4QO+qOeUTsMTuIJcs=
+
+Name: docs/reference/org/apache/xmlbeans/XmlShort.Factory.html
+SHA1-Digest: fwrMvRF0j5RbRKB7T/4MPmBltfo=
+
+Name: docs/reference/org/apache/xmlbeans/GDateSpecification.html
+SHA1-Digest: yOg1MlaKbG73YnWhRNpv1PeVdmw=
+
+Name: docs/guide/antXmlbean.html
+SHA1-Digest: ikOtdqLUV7GKATkLobR7CZYaOro=
+
+Name: docs/reference/org/apache/xmlbeans/QNameSet.html
+SHA1-Digest: MKeZ3VRur7GPiJO8wPNhzfOwsgg=
+
+Name: docs/reference/org/apache/xmlbeans/BindingConfig.html
+SHA1-Digest: Y5w/eDqQzhscT1JGLHs09pfZD4Q=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDate.Factory.html
+SHA1-Digest: cIYMEzq1IMa4jsxGT3DFNGaMRTU=
+
+Name: docs/reference/org/apache/xmlbeans/XmlInteger.html
+SHA1-Digest: lZoKYJV8iqUCvYmz97pZWMCpzlE=
+
+Name: docs/reference/constant-values.html
+SHA1-Digest: P09AK6cZeM0MCnmGZMl9X73jxf8=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDouble.html
+SHA1-Digest: WzyJlT+3baICK+6lkfunqJxxNYY=
+
+Name: docs/reference/org/apache/xmlbeans/XmlTokenSource.html
+SHA1-Digest: 3W7ji90ZcxGIwp50qZ43Dsbjs7g=
+
+Name: docs/reference/org/apache/xmlbeans/XmlLanguage.html
+SHA1-Digest: AhZfjcdUVbr9hBr/QTykyN7mXwo=
+
+Name: docs/reference/org/apache/xmlbeans/InterfaceExtension.MethodSign
+ ature.html
+SHA1-Digest: BF8FuC+u5kwgD0xLuVD8HZIjtUs=
+
+Name: docs/build.xml
+SHA1-Digest: 3gkpqRPeKswWhdiflLCiu8Uh0ZE=
+
+Name: bin/sfactor.cmd
+SHA1-Digest: WIp3rxwxACHZw2sTKvjomQVzxrU=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNMTOKEN.html
+SHA1-Digest: X6kGoUd8oXqSB3zt9s45gil+Ws0=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaTypeSystem.html
+SHA1-Digest: kWe2mmY81PKQ5MBvINebKw99/MQ=
+
+Name: docs/reference/org/apache/xmlbeans/XmlSaxHandler.html
+SHA1-Digest: TDKg4Ip+vAX3ktXnIk3NOGWr410=
+
+Name: docs/reference/org/apache/xmlbeans/XmlObject.Factory.html
+SHA1-Digest: x2AqSb+3lNhS8Yf9uajl+48cIJA=
+
+Name: docs/guide/conValidationWithXmlBeans.html
+SHA1-Digest: OpSAz5VSWxdWlEdvOuEKZiwJ+EE=
+
+Name: docs/reference/allclasses-noframe.html
+SHA1-Digest: oV3XVVfHD4B2VS9P3LoZvqkamtU=
+
+Name: docs/reference/org/apache/xmlbeans/XmlFactoryHook.html
+SHA1-Digest: fy5O+CY1T6MRYW5rUwguExwhz2A=
+
+Name: docs/reference/org/apache/xmlbeans/package-summary.html
+SHA1-Digest: /r43QWM+o69Mz1Me2qeWWKZTifc=
+
+Name: docs/reference/deprecated-list.html
+SHA1-Digest: BJQlilfoLuLd3GidDqa31pwP/n4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDateTime.Factory.html
+SHA1-Digest: c0ieyILSNPnz9mumqL1MXKhatSg=
+
+Name: docs/reference/org/apache/xmlbeans/XmlGDay.Factory.html
+SHA1-Digest: dUFbjJ+JOIThngwwxxdeB8O91YE=
+
+Name: bin/xstc.cmd
+SHA1-Digest: Cm8dv5/Paq0LmVXvG9BDC16mD2o=
+
+Name: docs/reference/org/apache/xmlbeans/XmlToken.Factory.html
+SHA1-Digest: Pz3UNyPB+S+Zy3uCRlbR2LSf4cE=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaGlobalAttribute.html
+SHA1-Digest: 3rdqzY+G4YvNK6NAzomeWRA2TAA=
+
+Name: docs/reference/org/apache/xmlbeans/ObjectFactory.html
+SHA1-Digest: tToVPKgxUYUc8MYfgSG8OU6oYX4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlID.html
+SHA1-Digest: 4S8Kfh6PblqBeFpwIFga+WP3NFE=
+
+Name: bin/dumpxsb
+SHA1-Digest: cjRsJKRG4obpj/ZgcuXyWp5t9Dc=
+
+Name: docs/reference/javax/xml/namespace/QName.html
+SHA1-Digest: sD09LgFFimXzwxEN1sknyVs6zmk=
+
+Name: docs/reference/org/apache/xmlbeans/XmlENTITY.html
+SHA1-Digest: 4Z2PMY8dOmvIHZUj6n21GDXkGvM=
+
+Name: docs/reference/package-list
+SHA1-Digest: Si8I4v7tBOWvv7x9hoIMwF3vEvw=
+
+Name: bin/inst2xsd
+SHA1-Digest: WexGoP0B+faMAJc3RQEFEpiwsJM=
+
+Name: bin/xsdtree.cmd
+SHA1-Digest: DgK2SJF6shXaokfI1S/LkAQL3Ts=
+
+Name: docs/reference/org/apache/xmlbeans/XmlCursor.html
+SHA1-Digest: ONRrRK52S0A03XVkusvJqV3DOFM=
+
+Name: LICENSE.txt
+SHA1-Digest: aa9TkRfKpOjHzqW73wvxXDNZp1E=
+
+Name: docs/reference/org/apache/xmlbeans/GDuration.html
+SHA1-Digest: wE081/PgTZwlxma3/0Zv4/NoA6E=
+
+Name: docs/images/conCursorTokenLocations.gif
+SHA1-Digest: oxCVQf3GexH3jOXAI5h9ryx9sx0=
+
+Name: docs/reference/org/apache/xmlbeans/XmlOptionsBean.html
+SHA1-Digest: cxp7SEo7Qey+tdTzPFx4zjnlr74=
+
+Name: docs/reference/org/apache/xmlbeans/InterfaceExtension.html
+SHA1-Digest: Nn+FR2v8tUdVQf7vcVMuFZPTk0w=
+
+Name: bin/dumpxsb.cmd
+SHA1-Digest: sfeol1SRc7dGTsMfIeW+OGmtGsk=
+
+Name: docs/guide/conJavaTypesGeneratedFromUserDerived.html
+SHA1-Digest: EG1rjo6+j5smHcFnrBtl7bMbxzk=
+
+Name: docs/reference/overview-tree.html
+SHA1-Digest: dp8NxBytfHz3qniJ7ARzFpf3GWM=
+
+Name: docs/reference/org/apache/xmlbeans/XmlGYear.Factory.html
+SHA1-Digest: Ma8M9nJyuTRjKFVCOH9BnQfqqlQ=
+
+Name: docs/reference/org/apache/xmlbeans/GDateBuilder.html
+SHA1-Digest: oUPI1dLMYePilHh0CcEjVEQeYKg=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNCName.Factory.html
+SHA1-Digest: PJnOrv+OZNuwB/EB4pR4zj0GJKU=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaType.Ref.html
+SHA1-Digest: 9Cn/JwzbARK8yeSYEUA6z4iPBYA=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDocumentProperties.html
+SHA1-Digest: DfP4hYcdGgoU1f3lmMneq6oSJoQ=
+
+Name: docs/reference/org/apache/xmlbeans/XmlGMonth.html
+SHA1-Digest: 7q6J/13MFD3lFE5bpbRezt1UOfs=
+
+Name: docs/reference/org/apache/xmlbeans/XmlGDay.html
+SHA1-Digest: 51PjSszH3MYbViXiB/M+bW9zKq4=
+
+Name: bin/validate
+SHA1-Digest: Om5E/PrGjZTAGvuZAiALcaakiL4=
+
+Name: bin/sdownload
+SHA1-Digest: 9l9mGW+8sWXv9N2iEetQQPvRnnw=
+
+Name: docs/reference/org/apache/xmlbeans/XMLStreamValidationException.
+ html
+SHA1-Digest: 6g8SsOxZroeBQ++HseMWuThpH0A=
+
+Name: docs/reference/overview-summary.html
+SHA1-Digest: FqEgkG6dOZJCMhx+2pB+a8j9glY=
+
+Name: docs/reference/org/apache/xmlbeans/XmlIDREFS.Factory.html
+SHA1-Digest: T2FhZZ3TPrX7T6Dh7dkux/BS3Bk=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaParticle.html
+SHA1-Digest: Ab8okIxOu7QDwtvHPAGR1kpRZ5o=
+
+Name: docs/reference/javax/xml/namespace/package-frame.html
+SHA1-Digest: tcUsrIhCY55X9Mcf+YWmXywLuLU=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNegativeInteger.html
+SHA1-Digest: RGbbQjo8l/d3JCEbDsje8gDjEdA=
+
+Name: docs/reference/org/apache/xmlbeans/XmlENTITY.Factory.html
+SHA1-Digest: DyNBNm/nuxLEN++pgzIKX/YBIlo=
+
+Name: docs/reference/org/apache/xmlbeans/XmlByte.Factory.html
+SHA1-Digest: ESut+n+Cxlw9GxVDkYfQVIToXt4=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaTypeElementSequencer.ht
+ ml
+SHA1-Digest: skJoCiFa40H/GJ9K6susC+zoC1c=
+
+Name: docs/reference/org/apache/xmlbeans/XmlGYearMonth.Factory.html
+SHA1-Digest: pu1BgCqBLLWElifWN9YXjuUgzAc=
+
+Name: docs/reference/org/apache/xmlbeans/XmlDecimal.Factory.html
+SHA1-Digest: 6kAsz24hI3qxbQ+PTUJGDqGjJAA=
+
+Name: docs/guide/conUnderstandingXMLTokens.html
+SHA1-Digest: bKLx2xPR944gELb0ZKtJJD9CIWM=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaIdentityConstraint.Ref.
+ html
+SHA1-Digest: Mrcyf4dNMn3X8zDDPNlM+hWV97U=
+
+Name: docs/reference/org/apache/xmlbeans/StringEnumAbstractBase.html
+SHA1-Digest: uAn1AOjqW/BiKz/hFu7GSa7NOCs=
+
+Name: docs/reference/org/apache/xmlbeans/XmlErrorCodes.html
+SHA1-Digest: ba6rFi+UY3WsxAji48s6H6Bn4qA=
+
+Name: docs/reference/org/apache/xmlbeans/XmlCalendar.html
+SHA1-Digest: 3KluYdXPVwzR4s+/m838E0aEFlA=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaAnnotated.html
+SHA1-Digest: X80uGgELF8rHxhKqEihiwYt6U20=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaModelGroup.html
+SHA1-Digest: GyGTLMbHGgOlgGR23ERt6O2PA8Q=
+
+Name: docs/reference/org/apache/xmlbeans/XmlGMonthDay.Factory.html
+SHA1-Digest: 7LQoULx8o2iA8y8LBJFAEAbqVLI=
+
+Name: docs/reference/org/apache/xmlbeans/SystemProperties.html
+SHA1-Digest: gB7KYsF6Lr/lSia/9m3SHD0TGyk=
+
+Name: docs/reference/org/apache/xmlbeans/XmlTime.html
+SHA1-Digest: KyMqtzBQ/XII1vruVpT1+FoFLfs=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNegativeInteger.Factory.ht
+ ml
+SHA1-Digest: zPvLaa1XNfMOoul95tnallYkX9U=
+
+Name: docs/guide/conNavigatingXMLwithCursors.html
+SHA1-Digest: piR5IhAZkWB4zdgbSGi8Sa6mumY=
+
+Name: docs/reference/org/apache/xmlbeans/XmlString.html
+SHA1-Digest: q8Qv7iFqwVXaBaZeUgK8DUBYAy8=
+
+Name: docs/reference/org/apache/xmlbeans/XmlLanguage.Factory.html
+SHA1-Digest: 7L8ATGuQfuOLOl+KWpySxsb6PX8=
+
+Name: docs/reference/org/apache/xmlbeans/XmlRuntimeException.html
+SHA1-Digest: V/RdmvEx6s38ajDXnsIXr8TzUZY=
+
+Name: docs/reference/org/apache/xmlbeans/XmlAnySimpleType.Factory.html
+SHA1-Digest: qZgclrfD2LFWuW07Ramdn4ssZVo=
+
+Name: docs/reference/org/apache/xmlbeans/DelegateXmlObject.html
+SHA1-Digest: gMJIUain9/SIu0UkvXzp/iHZOv8=
+
+Name: docs/reference/javax/xml/namespace/NamespaceContext.html
+SHA1-Digest: lXXnAc/fSk6A/895gg5ZZu7N3yk=
+
+Name: docs/reference/org/apache/xmlbeans/FilterXmlObject.html
+SHA1-Digest: JA7ic4jqZzOSV5/9vano7YakVGM=
+
+Name: docs/reference/org/apache/xmlbeans/XmlIDREFS.html
+SHA1-Digest: RmDHZfgzDdnXpyA7Cm0kahMMdkw=
+
+Name: docs/reference/org/apache/xmlbeans/XmlBoolean.Factory.html
+SHA1-Digest: WvwsiB8kD6vywdjVCBW6IpvWzks=
+
+Name: docs/reference/org/apache/xmlbeans/XmlCursor.XmlBookmark.html
+SHA1-Digest: N/Y2XAenonJqGpeptlWoyJgdh14=
+
+Name: docs/reference/org/apache/xmlbeans/XmlInt.html
+SHA1-Digest: oe9k2kxXCub4HNSUiIPqPNRsqOk=
+
+Name: docs/guide/conHandlingAny.html
+SHA1-Digest: +ydDqV0MHQ03SNDGUdrMgaoAN6k=
+
+Name: docs/reference/org/apache/xmlbeans/XmlGYear.html
+SHA1-Digest: /d/VmGGBB1yb1EMzcUhXRFTcXrc=
+
+Name: docs/reference/resources/inherit.gif
+SHA1-Digest: 3QumY1Bum7UO6KDQ5VZDNYleF+Q=
+
+Name: README.txt
+SHA1-Digest: BLes73y4Bhf45tLLAJza3EUtS20=
+
+Name: docs/reference/org/apache/xmlbeans/SchemaTypeLoaderException.htm
+ l
+SHA1-Digest: rPu2BonH+LqA0HRm07ewSZ9yzLg=
+
+Name: docs/images/conXMLTypeHierarchy.gif
+SHA1-Digest: G5GYUnC+6Ja4S3R7gRG9alstol8=
+
+Name: bin/xsdtree
+SHA1-Digest: IW6SimSJbu2h92jJKgbph6mvK7A=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNonPositiveInteger.Factory
+ .html
+SHA1-Digest: 4Wa9dNMKzJ99QRpbIgvenRA8JB4=
+
+Name: docs/reference/org/apache/xmlbeans/XmlNonPositiveInteger.html
+SHA1-Digest: KYkeLnF9Ofcj+v0v9bDT6pB1TOQ=
+
+Name: docs/reference/org/apache/xmlbeans/XmlAnyURI.Factory.html
+SHA1-Digest: yYflrnyQam5TsUXX2cqI1RrZWq4=
+
