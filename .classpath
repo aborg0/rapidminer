@@ -8,6 +8,7 @@
 	<classpathentry kind="src" path="resources_generated"/>
 	<classpathentry kind="src" path="src_agpl"/>
 	<classpathentry kind="lib" path="lib/rm_doc.jar"/>
+	<classpathentry kind="lib" path="lib/vldocking.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="output" path="build"/>
